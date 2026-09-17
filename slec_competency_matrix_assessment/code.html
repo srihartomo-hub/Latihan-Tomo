@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#c0cab6","primary-fixed":"#a0f882","on-tertiary-fixed-variant":"#52452b","surface-dim":"#d3daef","on-tertiary-fixed":"#241a05","background":"#f9f9ff","surface-container-highest":"#dce2f7","on-surface":"#141b2b","surface":"#f9f9ff","surface-variant":"#dce2f7","inverse-on-surface":"#edf0ff","error":"#ba1a1a","on-primary-container":"#c1ffa8","primary":"#156100","on-secondary-fixed":"#052100","inverse-surface":"#293040","on-secondary":"#ffffff","on-background":"#141b2b","on-surface-variant":"#40493b","surface-bright":"#f9f9ff","on-primary-fixed-variant":"#115300","surface-container":"#e9edff","secondary-fixed-dim":"#8bda6a","surface-tint":"#196d00","tertiary-container":"#7a6a4d","tertiary":"#605237","tertiary-fixed":"#f5e0bc","on-primary-fixed":"#032100","on-tertiary-container":"#ffeccd","on-primary":"#ffffff","on-secondary-container":"#29730c","surface-container-high":"#e1e8fd","inverse-primary":"#85db69","secondary-fixed":"#a5f783","tertiary-fixed-dim":"#d8c4a2","secondary":"#226d03","on-secondary-fixed-variant":"#165200","on-tertiary":"#ffffff","primary-container":"#2a7c13","error-container":"#ffdad6","on-error":"#ffffff","surface-container-low":"#f1f3ff","secondary-container":"#a5f783","surface-container-lowest":"#ffffff","on-error-container":"#93000a","outline":"#707a69","primary-fixed-dim":"#85db69"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-2xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-2xs":"0.25rem","space-3xl":"3rem","space-xl":"2rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-xs":"0.5rem","container-max":"1440px"},fontFamily:{"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"display-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-80 bg-surface-container-low z-50 flex flex-col justify-between py-space-md px-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm px-space-xs py-space-2xs"><img alt="SLEC Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrEyZVRa-9R5UnFQPMIXgQaiLyLSQAzJOlf5cl6UfZ4RQZK_sQiPW26na23x2_3oca0tt0glMvvHz1NShCz7zmHOclngifFqxvzEuWpckI4fRjbYqP865Brm1tTEGYjiAKTXNfN_qyIfoiXOrmStw3L7o9kZDi-s3OInFZKjdapp8j-9WwHFi6sCE5EdD078KuGVCYH8mGwzSyp1-_pE5P2HsqZ6G2D8lB6UOuamL8lrTZ5Hw3gMhNkA"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-2xs"><span class="font-label-lg text-label-lg text-on-surface font-bold truncate">SLEC-DTMS</span><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-secondary-container text-on-secondary-container leading-none">v2.4</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Syncrum Logistics Education Center</span></div></div><div class="h-px w-full bg-surface-container-highest"></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="mieruka-dashboard" href="#">Mieruka Dashboard (Executive &amp; KPI)</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="training-calendar-planning" href="#">Training Calendar &amp; Planning</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="training-management-lms" href="#">Training Management &amp; LMS</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="registration-attendance" href="#">Registration &amp; Digital Attendance</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="assessment-rubric" href="#">Assessment &amp; Practical Rubric</a><a aria-current="page" class="px-space-sm py-space-xs rounded-lg transition-colors truncate bg-primary-container text-on-primary font-bold shadow-sm" data-path="competency-matrix" href="#">Competency Matrix (Skill Radar)</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="certificate-verification" href="#">Certificate &amp; Verification</a></nav></div><div class="flex flex-col gap-space-sm"><div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-space-2xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface font-bold">Logistics Center Fleet</span><span class="inline-flex items-center gap-1 text-[11px] text-secondary font-semibold"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>Online</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">SLEC Real-Time Telemetry Active</span></div><div class="h-px w-full bg-surface-container-highest"></div><div class="flex items-center gap-space-sm px-space-xs"><div class="relative"><img alt="Profile" class="w-9 h-9 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-low"></span></div><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface truncate">Chief Master Trainer</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Syncrum Logistics Education</span></div></div></div></aside><div class="pl-80"><header class="fixed top-0 left-80 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="hover:text-on-surface cursor-pointer font-semibold text-primary">SLEC-DTMS</span><span class="text-outline-variant font-bold">/</span><span class="text-on-surface font-label-md text-label-md">Syncrum Logistics Education Center</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center w-80"><input class="w-full px-space-sm py-space-2xs bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search curriculum, driver, batch, matrix..." type="search"/></div><div class="flex items-center gap-space-xs"><div class="inline-flex items-center gap-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface hidden xl:inline">Forklift &amp; Driver Safety Cloud</span></div></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Lead Assessor</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Syncrum Logistics Center</span></div></div></div></header><main class="w-full pt-16 px-space-xl bg-background"><div class="flex flex-col w-full pb-space-3xl gap-space-xl">
+<!-- Top Banner / Summary Header -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -top-12 w-64 h-64 rounded-full bg-primary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs w-fit">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm tracking-wider uppercase">SLEC Standards v2.4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Syncrum Logistics Education Center</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Logistics Competency Matrix &amp; Practical Assessment Rubric</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Pusat evaluasi uji kecakapan praktik Forklift, Defensive Driving, Pre-Trip Inspection, &amp; Matriks Lisensi Karyawan SLEC</p>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="inline-flex items-center gap-space-2xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+          Export Matrix
+        </button>
+<button class="inline-flex items-center gap-space-2xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary hover:opacity-95 transition-opacity font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+          New Field Assessment
+        </button>
+</div>
+</div>
+<!-- Quick Telemetry Counters -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mt-space-lg pt-space-md">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Total Licensed Personnel</span>
+<div class="flex items-baseline gap-space-2xs mt-1">
+<span class="font-display-lg text-display-lg text-on-surface">428</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">94.2% Active</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Certified Master Operators</span>
+<div class="flex items-baseline gap-space-2xs mt-1">
+<span class="font-display-lg text-display-lg text-primary">184</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">+12 this mo</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Need Retrain / SIO Due</span>
+<div class="flex items-baseline gap-space-2xs mt-1">
+<span class="font-display-lg text-display-lg text-tertiary">23</span>
+<span class="font-label-sm text-label-sm text-error font-bold">5 Urgent</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Mieruka Safety Score</span>
+<div class="flex items-baseline gap-space-2xs mt-1">
+<span class="font-display-lg text-display-lg text-on-surface">97.8</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Zero Incidents</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 1: SLEC Competency Matrix (Skill & License Board) -->
+<section class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">grid_view</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">SLEC Competency Matrix (Skill &amp; License Board)</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mieruka visual tracking for heavy equipment, driver road safety, and field operating licenses</span>
+</div>
+<!-- Filters Strip -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="flex items-center bg-surface-container-low px-space-xs py-1 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-space-xs">Dept:</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>All Operations</option>
+<option selected="">OPS Driver</option>
+<option>Warehouse Forklift</option>
+<option>Fleet Maintenance</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container-low px-space-xs py-1 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-space-xs">License Status:</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>All Status</option>
+<option selected="">SIO Aktif</option>
+<option>Perlu Perpanjangan (&lt;30d)</option>
+<option>Remedial Required</option>
+</select>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-xs py-0.5 rounded bg-surface-container-lowest font-label-sm text-label-sm text-on-surface font-bold shadow-sm" type="button">Active Grid</button>
+<button class="px-space-xs py-0.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Audits</button>
+</div>
+</div>
+</div>
+<!-- Mieruka Matrix Table -->
+<div class="overflow-x-auto mt-space-xs">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-lg">Karyawan (Nama &amp; NIK)</th>
+<th class="py-space-sm px-space-sm">Posisi</th>
+<th class="py-space-sm px-space-sm text-center">Safety Driving</th>
+<th class="py-space-sm px-space-sm text-center">Forklift Basic</th>
+<th class="py-space-sm px-space-sm text-center">APD Awareness</th>
+<th class="py-space-sm px-space-sm text-center">Trip Inspection</th>
+<th class="py-space-sm px-space-sm text-center">ESD Campaign</th>
+<th class="py-space-sm px-space-md rounded-r-lg text-right">Overall Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-label-md">BS</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Budi Santoso</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIK: 12345 • Hub Cikarang</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-md text-label-md text-on-surface">Driver Heavy Fleet</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 95
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 90
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 100
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 92
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 88
+              </span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span> Certified Master
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-label-md">AP</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Andi Pratama</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIK: 12890 • WH Karawang</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-md text-label-md text-on-surface">Forklift Specialist</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 88
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 94
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 90
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Exempt
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Exempt
+              </span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Forklift Level 2
+              </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-md">RH</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Rudi Hermawan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIK: 13042 • Hub Cikarang</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-md text-label-md text-on-surface">Driver Distribution</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 82
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Need Training
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 85
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Need Retrain
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 90
+              </span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Monitoring
+              </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-label-md">HW</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Hendra Wijaya</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIK: 11204 • Hub Priok</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm font-label-md text-label-md text-on-surface">Driver Heavy Fleet</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 90
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 85
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 95
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 88
+              </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Need Training
+              </span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Remedial ESD
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Foot Legend -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[14px]">check_circle</span> Competent (≥80)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Retest Due / Marginal</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-error"></span> Unqualified / Action Required</span>
+</div>
+<span class="font-body-sm text-body-sm">Showing 4 of 428 active operators • Auto-synced with Kemnaker RI SIO standard</span>
+</div>
+</section>
+<!-- SECTION 2: 50 / 50 Split (Interactive Scorer vs Analytics) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- LEFT 6 COLUMNS: Practical Assessment Scorer -->
+<div class="lg:col-span-6 flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">assignment_turned_in</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Practical Assessment Scorer</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Forklift &amp; Driver Field Test • On-Site Assessor Console</span>
+</div>
+<span class="px-space-xs py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+          LIVE SCORER
+        </span>
+</div>
+<!-- Candidate Banner -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm" data-alt="Close up portrait of an Indonesian male logistics driver wearing high visibility safety vest and green hardhat with SLEC Syncrum logo in modern warehouse setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp1UDhcp38IQRrKvNaBCMTn3tKMxNNI0_Elx0DmVAYAmlyPgaGdhRu22LF7VODiy2ndiXCkbP0BKt9SXwKHl_bte9a1vFtbe31nUFEIKVYnsdBi9J1omZL_wSpTrp62hOHP_18_jZgMDYJa8Dy7-RNULMMnJyNNkgBLLgibxLXgockT-1SAnlTVHmklzDvt2nyx7Qec-7YpvlHIL8HTyqPSKjAaDSmiVNX6j4SjnOGV5xmMXlsubeEJA"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Budi Santoso (NIK: 12345)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Evaluasi Praktik Forklift Cikarang • Batch 48</span>
+</div>
+</div>
+<button class="text-primary hover:text-secondary font-label-md text-label-md font-bold" type="button">Change</button>
+</div>
+<!-- Interactive Rubric Form -->
+<form class="flex flex-col gap-space-md" id="assessment-form" onsubmit="event.preventDefault();">
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="flex flex-col gap-1 p-space-xs rounded-lg bg-surface-container-lowest transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+<span class="font-label-md text-label-md text-on-surface">Pre-Trip Inspection (Brake, Hydraulic, Mirror, Horn)</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold"><span id="val-item1">20</span> / 20 pts</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<input class="w-full accent-primary cursor-pointer rubric-slider" data-target="val-item1" max="20" min="0" type="range" value="20"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SOP 5-Point Daily Inspection checklist executed cleanly in &lt; 4 mins</span>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-1 p-space-xs rounded-lg bg-surface-container-lowest transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">2</span>
+<span class="font-label-md text-label-md text-on-surface">Safety Operation (Speed ≤10 km/h, Horn at corner, Seatbelt)</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold"><span id="val-item2">30</span> / 30 pts</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<input class="w-full accent-primary cursor-pointer rubric-slider" data-target="val-item2" max="30" min="0" type="range" value="30"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Strict compliance on pedestrian walkway zones and intersection audio warning</span>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col gap-1 p-space-xs rounded-lg bg-surface-container-lowest transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
+<span class="font-label-md text-label-md text-on-surface">Loading &amp; Pallet Stacking Maneuver</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold"><span id="val-item3">25</span> / 25 pts</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<input class="w-full accent-primary cursor-pointer rubric-slider" data-target="val-item3" max="25" min="0" type="range" value="25"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Even fork positioning, zero pallet drag, upright mast stability during tier-3 racking</span>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col gap-1 p-space-xs rounded-lg bg-surface-container-lowest transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center justify-center font-bold">4</span>
+<span class="font-label-md text-label-md text-on-surface">Smooth Parking &amp; Fork Down Protocol</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold"><span id="val-item4">25</span> / 25 pts</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<input class="w-full accent-primary cursor-pointer rubric-slider" data-target="val-item4" max="25" min="0" type="range" value="25"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Neutral gear, handbrake lock engaged, forks flush to ground, battery cut-off</span>
+</div>
+</div>
+<!-- Total Calculation & Result Trigger -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-high">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold">Cumulative Field Score</span>
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg text-primary" id="grand-total">100</span>
+<span class="font-title-md text-title-md text-on-surface-variant">/ 100</span>
+</div>
+</div>
+<div class="flex flex-col items-end" id="status-chip">
+<span class="px-space-sm py-1 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow-sm">
+              • COMPETENT (PASS)
+            </span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Auto-triggers Digital SIO</span>
+</div>
+</div>
+<!-- Trainer Notes -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Assessor Field Observations &amp; Verification Note</label>
+<textarea class="w-full px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" placeholder="Catatan khusus instruktur untuk sertifikasi Kemnaker &amp; keselamatan..." rows="2">Kandidat menunjukkan penguasaan sangat tinggi pada teknik blindspot cornering dan kontrol hidrolik halus pada muatan 1.5 ton. Direkomendasikan tanpa catatan perbaikan.</textarea>
+</div>
+<!-- Submit CTA -->
+<button class="w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary hover:opacity-95 transition-all font-title-md text-title-md font-bold shadow-md flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+          Simpan &amp; Terbitkan Hasil Praktik
+        </button>
+</form>
+</div>
+<!-- RIGHT 6 COLUMNS: Pre-Test vs Post-Test Effectiveness Analytics -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<!-- Analytics Header Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">trending_up</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pre-Test vs Post-Test Effectiveness</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cohort score improvement across heavy logistics safety curricula</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Q3 Cohort 48</span>
+</div>
+<!-- Comparative Metrics -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pre-Test Baseline</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-display-lg text-display-lg text-on-surface">65.0%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Initial diagnostic score</span>
+</div>
+<div class="p-space-sm rounded-lg bg-primary-container text-on-primary flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase font-bold">Post-Test Mastery</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-display-lg text-display-lg text-on-primary">90.5%</span>
+<span class="font-label-sm text-label-sm text-on-primary-container font-bold">+25.5 Pts</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-primary-container mt-1">+39.2% Training Gain Effectiveness</span>
+</div>
+</div>
+<!-- SVG Progression Visualization -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cohort Delta Benchmark</span>
+<div class="flex items-center gap-space-sm text-label-sm font-label-sm">
+<span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span> Pre-Test</span>
+<span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Post-Test</span>
+</div>
+</div>
+<svg class="w-full h-24 overflow-visible" fill="none" preserveaspectratio="none" viewbox="0 0 400 90">
+<!-- Grid Lines -->
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="2 4" x1="0" x2="400" y1="20" y2="20"></line>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="2 4" x1="0" x2="400" y1="55" y2="55"></line>
+<line class="text-surface-container-highest" stroke="currentColor" x1="0" x2="400" y1="85" y2="85"></line>
+<!-- Pre-test line -->
+<path class="text-outline-variant" d="M 20 65 Q 110 60 200 64 T 380 62" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<circle class="fill-outline-variant" cx="20" cy="65" r="3.5"></circle>
+<circle class="fill-outline-variant" cx="200" cy="64" r="3.5"></circle>
+<circle class="fill-outline-variant" cx="380" cy="62" r="3.5"></circle>
+<!-- Post-test line with highlight area -->
+<path class="fill-primary/10" d="M 20 65 L 20 25 Q 110 18 200 22 T 380 18 L 380 62 Q 290 63 200 64 T 20 65 Z"></path>
+<path class="text-primary" d="M 20 25 Q 110 18 200 22 T 380 18" fill="none" stroke="currentColor" stroke-width="3"></path>
+<circle class="fill-primary" cx="20" cy="25" r="4.5"></circle>
+<circle class="fill-primary" cx="200" cy="22" r="4.5"></circle>
+<circle class="fill-primary" cx="380" cy="18" r="4.5"></circle>
+</svg>
+</div>
+<!-- Question Difficulty Breakdown -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Question Difficulty Breakdown</span>
+<!-- Category 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium">APD &amp; Personal Safety Protocol</span>
+<span class="text-primary font-bold">98% Correct</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 98%;"></div>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium">Hydraulic Safety &amp; Lift Pressure Calculation</span>
+<span class="text-secondary font-bold">89% Correct</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 89%;"></div>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-on-surface font-medium">Blindspot &amp; Multi-Zone Navigation (Pedestrian priority)</span>
+<span class="text-primary-container font-bold">82% Correct</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Training Center Field Snapshot / Visual Context -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex items-center gap-space-md">
+<img class="w-28 h-24 rounded-lg object-cover flex-shrink-0 shadow-sm" data-alt="Industrial indoor logistics training center with yellow and green Toyota counterbalance forklifts stacked pallets safety cones and instructors in Syncrum uniform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8tMQtYF7S4k-JJqYgRUGwklzBtMZ8AGHAcX1v-xtAzO5iUhDLI8W5qvCNjxEJVmd2MPNNh2mSamKdFmxVrvamBKtZaqSV_vh5ZLdiNOm2DkOh68Mwzw4neRj4-sKK1E9t2M-AwBKggmoeONrXC-xn0UmyUfbRlzrAUHn5P1U8yRRa_NWt5DX8JdPmJdxm-H3Qa7LmTP3TeAlpiFO2TqTKqesn8pDM0jWwzjUiQlChdZuqW4LX0-OXRA"/>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Syncrum Simulator Yard</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Cikarang Logistics Practical Arena 02</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Equipped with 3.0T Counterbalance units, high-reach racking bays, and automated telemetry tracking mats.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const sliders = document.querySelectorAll('.rubric-slider');
+    const grandTotalEl = document.getElementById('grand-total');
+    const statusChip = document.getElementById('status-chip');
+
+    function updateTotal() {
+      let total = 0;
+      sliders.forEach(slider => {
+        const val = parseInt(slider.value, 10) || 0;
+        const targetId = slider.getAttribute('data-target');
+        const targetSpan = document.getElementById(targetId);
+        if (targetSpan) {
+          targetSpan.textContent = val;
+        }
+        total += val;
+      });
+
+      if (grandTotalEl) {
+        grandTotalEl.textContent = total;
+      }
+
+      if (statusChip) {
+        if (total >= 80) {
+          statusChip.innerHTML = `
+            <span class="px-space-sm py-1 rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow-sm">
+              &bull; COMPETENT (PASS)
+            </span>
+            <span class="font-label-sm text-label-sm text-secondary mt-1">Auto-triggers Digital SIO</span>
+          `;
+        } else if (total >= 60) {
+          statusChip.innerHTML = `
+            <span class="px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold shadow-sm">
+              &bull; MARGINAL (RE-TEST)
+            </span>
+            <span class="font-label-sm text-label-sm text-tertiary mt-1">Schedule Field Retrial</span>
+          `;
+        } else {
+          statusChip.innerHTML = `
+            <span class="px-space-sm py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-bold shadow-sm">
+              &bull; NOT YET COMPETENT
+            </span>
+            <span class="font-label-sm text-label-sm text-error mt-1">Mandatory Full Retraining</span>
+          `;
+        }
+      }
+    }
+
+    sliders.forEach(slider => {
+      slider.addEventListener('input', updateTotal);
+    });
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#c0cab6","primary-fixed":"#a0f882","on-tertiary-fixed-variant":"#52452b","surface-dim":"#d3daef","on-tertiary-fixed":"#241a05","background":"#f9f9ff","surface-container-highest":"#dce2f7","on-surface":"#141b2b","surface":"#f9f9ff","surface-variant":"#dce2f7","inverse-on-surface":"#edf0ff","error":"#ba1a1a","on-primary-container":"#c1ffa8","primary":"#156100","on-secondary-fixed":"#052100","inverse-surface":"#293040","on-secondary":"#ffffff","on-background":"#141b2b","on-surface-variant":"#40493b","surface-bright":"#f9f9ff","on-primary-fixed-variant":"#115300","surface-container":"#e9edff","secondary-fixed-dim":"#8bda6a","surface-tint":"#196d00","tertiary-container":"#7a6a4d","tertiary":"#605237","tertiary-fixed":"#f5e0bc","on-primary-fixed":"#032100","on-tertiary-container":"#ffeccd","on-primary":"#ffffff","on-secondary-container":"#29730c","surface-container-high":"#e1e8fd","inverse-primary":"#85db69","secondary-fixed":"#a5f783","tertiary-fixed-dim":"#d8c4a2","secondary":"#226d03","on-secondary-fixed-variant":"#165200","on-tertiary":"#ffffff","primary-container":"#2a7c13","error-container":"#ffdad6","on-error":"#ffffff","surface-container-low":"#f1f3ff","secondary-container":"#a5f783","surface-container-lowest":"#ffffff","on-error-container":"#93000a","outline":"#707a69","primary-fixed-dim":"#85db69"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-2xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-2xs":"0.25rem","space-3xl":"3rem","space-xl":"2rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-xs":"0.5rem","container-max":"1440px"},fontFamily:{"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"display-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-space-md px-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm px-space-xs py-space-2xs"><img alt="SLEC System Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrEyZVRa-9R5UnFQPMIXgQaiLyLSQAzJOlf5cl6UfZ4RQZK_sQiPW26na23x2_3oca0tt0glMvvHz1NShCz7zmHOclngifFqxvzEuWpckI4fRjbYqP865Brm1tTEGYjiAKTXNfN_qyIfoiXOrmStw3L7o9kZDi-s3OInFZKjdapp8j-9WwHFi6sCE5EdD078KuGVCYH8mGwzSyp1-_pE5P2HsqZ6G2D8lB6UOuamL8lrTZ5Hw3gMhNkA"/><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-surface">SLEC System</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Enterprise Training</span></div></div><div class="h-px w-full bg-surface-container-highest"></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="training-management" href="#"><span class="material-symbols-outlined text-[20px]">model_training</span><span class="font-body-md text-body-md">Training Management</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg transition-colors bg-primary-container text-on-primary font-bold" data-path="participant-database" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Participant Database</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assessment" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-body-md text-body-md">Assessment</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="certificate" href="#"><span class="material-symbols-outlined text-[20px]">workspace_premium</span><span class="font-body-md text-body-md">Certificate</span></a></nav></div><div class="flex flex-col gap-space-sm"><div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-space-2xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">System Status</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Supabase Cloud Connected</span></div><div class="h-px w-full bg-surface-container-highest"></div><div class="flex items-center gap-space-sm px-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-low"></span></div><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface truncate">Administrator</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">SLEC Learning Center</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><img alt="SLEC System Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrEyZVRa-9R5UnFQPMIXgQaiLyLSQAzJOlf5cl6UfZ4RQZK_sQiPW26na23x2_3oca0tt0glMvvHz1NShCz7zmHOclngifFqxvzEuWpckI4fRjbYqP865Brm1tTEGYjiAKTXNfN_qyIfoiXOrmStw3L7o9kZDi-s3OInFZKjdapp8j-9WwHFi6sCE5EdD078KuGVCYH8mGwzSyp1-_pE5P2HsqZ6G2D8lB6UOuamL8lrTZ5Hw3gMhNkA"/><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="hover:text-on-surface cursor-pointer">TMS</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-on-surface font-label-md text-label-md">Enterprise Workspace</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center w-72"><span class="material-symbols-outlined absolute left-space-xs text-on-surface-variant text-[20px]">search</span><input class="w-full pl-9 pr-space-sm py-space-2xs bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search participant, batch, syllabus..." type="search"/></div><div class="flex items-center gap-space-xs"><div class="inline-flex items-center gap-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface hidden xl:inline">Supabase Active</span></div><button class="relative p-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">System Admin</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">SLEC Learning Center</span></div></div></div></header><main class="w-full pt-16 px-space-xl bg-background"><div class="flex flex-col w-full pb-space-3xl gap-space-xl">
+<!-- Top Governance & Directory Control Bar -->
+<section class="flex flex-col gap-space-md pt-space-xs">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary font-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Talent &amp; Competency Registry</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Participant Database &amp; Records</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Centralized enterprise training credentials, live compliance logs, and cross-department roster.</p>
+</div>
+<!-- Action Suite -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors shadow-sm font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Download Roster</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors shadow-sm font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span>Import CSV / Excel</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all shadow-md font-label-lg text-label-lg" type="button">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span>Add Participant</span>
+</button>
+</div>
+</div>
+<!-- Filter & Query Control Strip -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center gap-space-sm">
+<div class="relative flex-1 min-w-[260px]">
+<span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-space-md py-space-xs bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#2a7c13] transition-all" id="searchInput" placeholder="Search by name, NIP (Employee ID), or division..." type="search"/>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-2xs">
+<span class="material-symbols-outlined text-outline text-[18px] mr-space-2xs">business</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none pr-space-2xs cursor-pointer">
+<option value="">All Departments</option>
+<option value="engineering">Engineering &amp; IT</option>
+<option value="operations">Plant Operations</option>
+<option value="finance">Finance &amp; Treasury</option>
+<option value="hc">Human Capital Dev</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-2xs">
+<span class="material-symbols-outlined text-outline text-[18px] mr-space-2xs">verified</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none pr-space-2xs cursor-pointer">
+<option value="">Status: All</option>
+<option value="active">Active Track</option>
+<option value="graduated">Graduated / Passed</option>
+<option value="probation">Probation / Remedial</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-lg px-space-sm py-space-2xs">
+<span class="material-symbols-outlined text-outline text-[18px] mr-space-2xs">event_repeat</span>
+<select class="bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none pr-space-2xs cursor-pointer">
+<option value="2025">Batch FY-2025</option>
+<option value="2024">Batch FY-2024</option>
+<option value="2023">Batch FY-2023</option>
+</select>
+</div>
+<button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Reset Filters" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_alt_off</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Summary Metrics Strip -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="h-1 w-full bg-primary absolute top-0 left-0"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Total Trainees</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-surface">1,248</span>
+<div class="inline-flex items-center gap-space-2xs px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+14.2%</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Synchronized via Enterprise Active Directory</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="h-1 w-full bg-secondary absolute top-0 left-0"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Active In Session</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">cast_for_education</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-surface">312</span>
+<span class="font-label-md text-label-md text-secondary font-bold">12 Batches Live</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-space-xs overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 25%"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="h-1 w-full bg-primary-fixed-dim absolute top-0 left-0"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Certification Rate</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-surface">88.5%</span>
+<div class="inline-flex items-center gap-space-2xs px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Target 85%</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">924 certified valid through Q4-2026</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="h-1 w-full bg-primary-container absolute top-0 left-0"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Avg Attendance</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-surface">96.2%</span>
+<div class="inline-flex items-center gap-space-2xs text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">hotel_class</span>
+<span>ISO 29993 Compliant</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Minimum compliance threshold: 80.0%</span>
+</div>
+</section>
+<!-- Main Work Area: Data Table & Interactive Detail Pane -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl items-start">
+<!-- Participant Data Table Container (8 cols on XL) -->
+<div class="xl:col-span-8 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Table Filter Header Ribbon -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface">Enrolled Candidates</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Showing 6 of 1,248</span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">view_column</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Responsive Table Viewport -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/40 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm pl-space-md pr-space-xs w-10">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-space-sm px-space-xs">Participant</th>
+<th class="py-space-sm px-space-xs">Department</th>
+<th class="py-space-sm px-space-xs">Program &amp; Cohort</th>
+<th class="py-space-sm px-space-xs text-center">Attendance</th>
+<th class="py-space-sm px-space-xs text-center">Pre / Post Test</th>
+<th class="py-space-sm px-space-xs">Status</th>
+<th class="py-space-sm pr-space-md pl-space-xs text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Selected Participant (Sarah Amanda) -->
+<tr class="bg-surface-container-low/70 hover:bg-surface-container-high/40 transition-colors cursor-pointer" onclick="selectParticipant('sarah')">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input checked="" class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-xs min-w-[210px]">
+<div class="flex items-center gap-space-xs">
+<div class="relative w-9 h-9 shrink-0">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Corporate headshot of Sarah Amanda, an Indonesian mid-level IT systems analyst woman wearing a neat formal forest-green blazer with natural workplace studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb6WK13IoFoRsB-emO9i-xg8WyrQUw7YbRWOdQCEA3hAZaqOSFIOrFOgrIV4Wp4KZBWH08kuQOTzCzfnz03TzFcdpjRC1JVq-w0ojr65TvRwZIHrIFv30g-KCZ2bqGprO7aRwJxNAndZAr69ks5_LIXOa3lNNCkk2YNuMlXBQwGedlmJA6J7X1Dnk98gyuIzChsV8grKEZ3I0XZHXU_pjeSDzjY0-3BnsEIlX_cJiEJLt0OM8x063dng"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Sarah Amanda</span>
+<span class="font-label-sm text-label-sm text-outline truncate">NIP: 19940812-002</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs min-w-[130px]">
+<span class="font-body-sm text-body-sm text-on-surface-variant">IT Architecture</span>
+</td>
+<td class="py-space-sm px-space-xs min-w-[180px]">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface truncate">Enterprise Cloud Arch</span>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px]">B-2025-Q1</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<span class="inline-flex items-center justify-center px-space-xs py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold">
+                  98.0%
+                </span>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">65</span>
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_forward</span>
+<span class="font-bold text-primary">94</span>
+</div>
+</td>
+<td class="py-space-sm px-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Active</span>
+</span>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1 rounded text-primary hover:bg-secondary-container/30 transition-colors" title="Inspect Record" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container transition-colors" title="Export Credential" type="button">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Dimas Pratama -->
+<tr class="hover:bg-surface-container-high/30 transition-colors cursor-pointer" onclick="selectParticipant('dimas')">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-xs min-w-[210px]">
+<div class="flex items-center gap-space-xs">
+<div class="relative w-9 h-9 shrink-0">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait of an experienced male corporate operations supervisor named Dimas Pratama in his late 30s wearing a modern crisp light beige formal shirt with neutral studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFDrdRhL1ceQLQhCbe678DzMSE27J1PsmXjSx0_07LdFCJGbSxlR3dTj5nL_cse5KB-LjJQbWfu3J4WgfcnKperNQo60BDwFmdPlfpO91pUKgpD0MxCHA_q0lsbCfWOLtDPw9kRwzlGLaIegsePYgGEf2wBIwhQsRcGaXLoul41w6nTpIbym5l_L2Cr-8Le0H0q-yrwJuSNGn-5iO8DljapoiIcd5EJ8-9jtVZvxcjpiA44E3AUQ4MsQ"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Dimas Pratama</span>
+<span class="font-label-sm text-label-sm text-outline truncate">NIP: 19890204-019</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs min-w-[130px]">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Plant Operations</span>
+</td>
+<td class="py-space-sm px-space-xs min-w-[180px]">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface truncate">Advanced SCADA Safety</span>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px]">B-2024-Q4</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<span class="inline-flex items-center justify-center px-space-xs py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold">
+                  100%
+                </span>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">72</span>
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_forward</span>
+<span class="font-bold text-primary">98</span>
+</div>
+</td>
+<td class="py-space-sm px-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Graduated</span>
+</span>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container transition-colors" title="Inspect Record" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-primary hover:bg-secondary-container/30 transition-colors" title="Export Credential" type="button">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Rina Kusuma -->
+<tr class="hover:bg-surface-container-high/30 transition-colors cursor-pointer" onclick="selectParticipant('rina')">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-xs min-w-[210px]">
+<div class="flex items-center gap-space-xs">
+<div class="relative w-9 h-9 shrink-0">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Warm professional headshot of Rina Kusuma, an energetic Asian corporate trainer and financial auditor woman in modern olive silk workwear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuYkq3Cvp2RJcDZVsgA7GRaC9zlNP_wFRY5-m4SIF0aHBywFHa4YGxgwU2qlmFceDnoX0QzxAkOjpJDFHaJaCHscjgXSYl57qhVQLlNDad7HeRcI6ltrMboJDZ3DiUC6vqiUSGPSYRrVdpJgVMOFd5MdV6PTX8So1Roe5wqbsZ0rAfg0w90NOEbY_tmGXUDcPW7TI73mxHprKLiK2rTocDwOSv9FjaD8-2jCghsk1I8p7yzFmH47Uc0A"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-outline border-2 border-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Rina Kusuma</span>
+<span class="font-label-sm text-label-sm text-outline truncate">NIP: 19961115-045</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs min-w-[130px]">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Finance &amp; Treasury</span>
+</td>
+<td class="py-space-sm px-space-xs min-w-[180px]">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface truncate">IFRS-17 Compliance</span>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px]">B-2025-Q1</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<span class="inline-flex items-center justify-center px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">
+                  92.5%
+                </span>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">58</span>
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_forward</span>
+<span class="font-bold text-primary">86</span>
+</div>
+</td>
+<td class="py-space-sm px-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Active</span>
+</span>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container transition-colors" title="Inspect Record" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container transition-colors" title="Export Credential" type="button">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Hendra Wijaya -->
+<tr class="hover:bg-surface-container-high/30 transition-colors cursor-pointer" onclick="selectParticipant('hendra')">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-xs min-w-[210px]">
+<div class="flex items-center gap-space-xs">
+<div class="relative w-9 h-9 shrink-0">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center font-label-md text-label-md font-bold text-primary">
+                      HW
+                    </div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-error border-2 border-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Hendra Wijaya</span>
+<span class="font-label-sm text-label-sm text-outline truncate">NIP: 19910520-088</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs min-w-[130px]">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Human Capital</span>
+</td>
+<td class="py-space-sm px-space-xs min-w-[180px]">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface truncate">Agile HR Transformation</span>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px]">B-2025-Q1</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<span class="inline-flex items-center justify-center px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+                  74.0%
+                </span>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">50</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="font-bold text-on-surface-variant">64</span>
+</div>
+</td>
+<td class="py-space-sm px-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-error-container/60 text-on-error-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Probation</span>
+</span>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container transition-colors" title="Inspect Record" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-outline hover:bg-surface-container transition-colors" title="Remedial Request" type="button">
+<span class="material-symbols-outlined text-[18px]">notification_important</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Maya Lestari -->
+<tr class="hover:bg-surface-container-high/30 transition-colors cursor-pointer" onclick="selectParticipant('maya')">
+<td class="py-space-sm pl-space-md pr-space-xs">
+<input class="rounded accent-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-sm px-space-xs min-w-[210px]">
+<div class="flex items-center gap-space-xs">
+<div class="relative w-9 h-9 shrink-0">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Corporate headshot profile photo of Maya Lestari, a professional Indonesian systems engineer woman smiling calmly, wearing dark business attire with green tone accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_IZgiSlBPNq957C63AR-IyePOpsnRJGEHwE6g_HM7K0JhM3SGDdWzrQ-ijWSZKvQI5qWnkFj0lHXHwe1ioxhMVe8zajGvHoHSv54iSpuOMUf-yz0d2y8i8WeZHvozYuQXfF4vhT1Py8RNWtwqmzVmnhVpbMFOvFjwda7yAMB_MkDczc6FZtXinwe8FVYqcf6Py13sDSPrdCtFHJiEC5pyz2cuTEJMipYoWOqnT5vJ4ZokaLN1MV8OUg"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Maya Lestari</span>
+<span class="font-label-sm text-label-sm text-outline truncate">NIP: 19930419-012</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs min-w-[130px]">
+<span class="font-body-sm text-body-sm text-on-surface-variant">IT Architecture</span>
+</td>
+<td class="py-space-sm px-space-xs min-w-[180px]">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface truncate">Enterprise Cloud Arch</span>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px]">B-2025-Q1</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<span class="inline-flex items-center justify-center px-space-xs py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-bold">
+                  96.0%
+                </span>
+</td>
+<td class="py-space-sm px-space-xs text-center">
+<div class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">70</span>
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_forward</span>
+<span class="font-bold text-primary">91</span>
+</div>
+</td>
+<td class="py-space-sm px-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Active</span>
+</span>
+</td>
+<td class="py-space-sm pr-space-md pl-space-xs text-right">
+<div class="inline-flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container transition-colors" title="Inspect Record" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container transition-colors" title="Export Credential" type="button">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Row Volume Controls -->
+<div class="p-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>Rows per page:</span>
+<select class="bg-surface-container-lowest rounded px-space-2xs py-1 text-on-surface text-body-sm focus:outline-none">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+<span class="ml-space-sm">1 - 5 of 1,248 participants</span>
+</div>
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded text-outline hover:bg-surface-container hover:text-on-surface transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">first_page</span>
+</button>
+<button class="p-1 rounded text-outline hover:bg-surface-container hover:text-on-surface transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold" type="button">1</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-on-surface font-label-md text-label-md" type="button">2</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-on-surface font-label-md text-label-md" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container text-on-surface font-label-md text-label-md" type="button">125</button>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">last_page</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Workspace: Selected Talent Dossier / Detail Hub (4 cols on XL) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md" id="participantDrawer">
+<!-- Profile Identification Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col gap-space-md">
+<!-- Top Green Accent Line -->
+<div class="h-1.5 w-full bg-gradient-to-r from-primary via-primary-container to-secondary-container absolute top-0 left-0"></div>
+<div class="flex items-start justify-between mt-space-2xs">
+<div class="flex gap-space-sm items-center">
+<img class="w-14 h-14 rounded-xl object-cover shadow-md" data-alt="Clear detailed profile portrait of Sarah Amanda in business professional attire, smiling with corporate office background softly blurred." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByoIpTD095M8Q79t6-g7RiawnBa1fI_Xu3Xovvw4uPEQ8Ukob11I6sq_fDgYEWlBJTqrFtutnxdQUHP37CFzr5TPmdAuukYjULWRAQDqh0yGSTpKhszJRQPko2DIYBQ1IWBvrLXkDwBWzqshMsEdbtGb-zvLGKYplzoIksoIoG3gEwazMcU6p1WXEIgq0k5PNB_3hatPMq-VxHCP2Xh7EHRG408cje19zqG1dbaYJy9zdNLjPEXlkWTQ"/>
+<div class="flex flex-col">
+<div class="inline-flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Sarah Amanda</h3>
+<span class="material-symbols-outlined text-primary text-[18px]" title="Enterprise Certified">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Senior Systems Analyst</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Dept. IT Architecture &amp; Governance</span>
+</div>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container" title="Quick Options" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Identity Pill Track -->
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-low p-space-xs rounded-lg">
+<div class="flex flex-col px-space-2xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Employee ID</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">NIP-19940812-002</span>
+</div>
+<div class="flex flex-col px-space-2xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Cohort Batch</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">2025-W04 Alpha</span>
+</div>
+</div>
+<!-- Current Program Assessment Metric Gauge -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Competency Delta</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">+29 Pts (High Gain)</span>
+</div>
+<!-- Visual Score Comparison Bar Chart (Inline SVG) -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded bg-outline-variant"></span>
+                Pre-Test: <strong class="text-on-surface">65/100</strong>
+</span>
+<span class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded bg-primary-container"></span>
+                Post-Test: <strong class="text-primary font-bold">94/100</strong>
+</span>
+</div>
+<!-- SVG Visual Representation of Progress -->
+<svg class="w-full h-8" fill="none" viewbox="0 0 300 24">
+<!-- Background Bar Track -->
+<rect fill="#dce2f7" height="16" rx="8" width="300" x="0" y="4"></rect>
+<!-- Pre-Test Baseline Bar -->
+<rect fill="#707a69" fill-opacity="0.4" height="16" rx="8" width="195" x="0" y="4"></rect>
+<!-- Post-Test Achievement Bar -->
+<rect fill="#2a7c13" fill-opacity="0.9" height="16" rx="8" width="282" x="0" y="4"></rect>
+<!-- Marker Point Pre-Test -->
+<circle cx="195" cy="12" fill="#ffffff" r="5" stroke="#707a69" stroke-width="2"></circle>
+<!-- Marker Point Post-Test -->
+<circle cx="282" cy="12" fill="#ffffff" r="5" stroke="#156100" stroke-width="2"></circle>
+</svg>
+</div>
+</div>
+<!-- Academic & Compliance Quick Stats Bento -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">4 / 4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Modules Passed</span>
+</div>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">98.0%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Attendance Live</span>
+</div>
+</div>
+</div>
+<!-- Digital Certificate Cryptographic Ledger Box -->
+<div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-2xs text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Digital Certificate Hash</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-[10px] font-bold">ISSUED</span>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded-lg flex items-center justify-between">
+<code class="font-mono font-label-sm text-label-sm text-on-surface truncate">SLEC-2025-0984-ARC</code>
+<button class="text-primary hover:text-primary-container p-1" onclick="navigator.clipboard.writeText('SLEC-2025-0984-ARC')" title="Copy Hash" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant leading-tight">SHA-256 verifiable on SLEC Enterprise Cloud Registry. Expiration: Nov 2028.</span>
+</div>
+<!-- Profile Action Suite -->
+<div class="flex flex-col sm:flex-row items-stretch gap-space-xs pt-space-2xs">
+<button class="flex-1 inline-flex items-center justify-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Transcript</span>
+</button>
+<button class="flex-1 inline-flex items-center justify-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Get Certificate</span>
+</button>
+</div>
+</div>
+<!-- Training Path Progress Accordion / Timeline -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Curriculum Milestones</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">100% Completed</span>
+</div>
+<div class="flex flex-col gap-space-sm relative before:absolute before:left-3 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Step 1 -->
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Module 1: Enterprise Microservices</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Score 95</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">16 Hours • Instructor Led • 100% Attended</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Module 2: Cloud Security &amp; DevSecOps</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Score 92</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">24 Hours • Hands-on Lab • 96% Attended</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Module 3: Scalable Data Pipelines</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Score 90</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">20 Hours • Project Assessment • 100% Attended</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Module 4: Architecture Governance Board</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Score 98</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12 Hours • Defense Capstone • 100% Attended</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function selectParticipant(id) {
+    // Dynamic selection micro-interaction placeholder
+    const drawer = document.getElementById('participantDrawer');
+    if (drawer) {
+      drawer.classList.add('transition-opacity', 'duration-150');
+      drawer.style.opacity = '0.7';
+      setTimeout(() => {
+        drawer.style.opacity = '1';
+      }, 150);
+    }
+  }
+
+  // Quick search filter interaction
+  const searchInput = document.getElementById('searchInput');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      const rows = document.querySelectorAll('tbody tr');
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  }
+</script></main></div></body></html>

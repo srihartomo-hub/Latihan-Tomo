@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#c0cab6","primary-fixed":"#a0f882","on-tertiary-fixed-variant":"#52452b","surface-dim":"#d3daef","on-tertiary-fixed":"#241a05","background":"#f9f9ff","surface-container-highest":"#dce2f7","on-surface":"#141b2b","surface":"#f9f9ff","surface-variant":"#dce2f7","inverse-on-surface":"#edf0ff","error":"#ba1a1a","on-primary-container":"#c1ffa8","primary":"#156100","on-secondary-fixed":"#052100","inverse-surface":"#293040","on-secondary":"#ffffff","on-background":"#141b2b","on-surface-variant":"#40493b","surface-bright":"#f9f9ff","on-primary-fixed-variant":"#115300","surface-container":"#e9edff","secondary-fixed-dim":"#8bda6a","surface-tint":"#196d00","tertiary-container":"#7a6a4d","tertiary":"#605237","tertiary-fixed":"#f5e0bc","on-primary-fixed":"#032100","on-tertiary-container":"#ffeccd","on-primary":"#ffffff","on-secondary-container":"#29730c","surface-container-high":"#e1e8fd","inverse-primary":"#85db69","secondary-fixed":"#a5f783","tertiary-fixed-dim":"#d8c4a2","secondary":"#226d03","on-secondary-fixed-variant":"#165200","on-tertiary":"#ffffff","primary-container":"#2a7c13","error-container":"#ffdad6","on-error":"#ffffff","surface-container-low":"#f1f3ff","secondary-container":"#a5f783","surface-container-lowest":"#ffffff","on-error-container":"#93000a","outline":"#707a69","primary-fixed-dim":"#85db69"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-2xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-2xs":"0.25rem","space-3xl":"3rem","space-xl":"2rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-xs":"0.5rem","container-max":"1440px"},fontFamily:{"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"display-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-80 bg-surface-container-low z-50 flex flex-col justify-between py-space-md px-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm px-space-xs py-space-2xs"><img alt="SLEC Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrEyZVRa-9R5UnFQPMIXgQaiLyLSQAzJOlf5cl6UfZ4RQZK_sQiPW26na23x2_3oca0tt0glMvvHz1NShCz7zmHOclngifFqxvzEuWpckI4fRjbYqP865Brm1tTEGYjiAKTXNfN_qyIfoiXOrmStw3L7o9kZDi-s3OInFZKjdapp8j-9WwHFi6sCE5EdD078KuGVCYH8mGwzSyp1-_pE5P2HsqZ6G2D8lB6UOuamL8lrTZ5Hw3gMhNkA"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-2xs"><span class="font-label-lg text-label-lg text-on-surface font-bold truncate">SLEC-DTMS</span><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-secondary-container text-on-secondary-container leading-none">v2.4</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Syncrum Logistics Education Center</span></div></div><div class="h-px w-full bg-surface-container-highest"></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="mieruka-dashboard" href="#">Mieruka Dashboard (Executive &amp; KPI)</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="training-calendar-planning" href="#">Training Calendar &amp; Planning</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="training-management-lms" href="#">Training Management &amp; LMS</a><a aria-current="page" class="px-space-sm py-space-xs rounded-lg transition-colors truncate bg-primary-container text-on-primary font-bold shadow-sm" data-path="registration-attendance" href="#">Registration &amp; Digital Attendance</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="assessment-rubric" href="#">Assessment &amp; Practical Rubric</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="competency-matrix" href="#">Competency Matrix (Skill Radar)</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="certificate-verification" href="#">Certificate &amp; Verification</a></nav></div><div class="flex flex-col gap-space-sm"><div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-space-2xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface font-bold">Logistics Center Fleet</span><span class="inline-flex items-center gap-1 text-[11px] text-secondary font-semibold"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>Online</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">SLEC Real-Time Telemetry Active</span></div><div class="h-px w-full bg-surface-container-highest"></div><div class="flex items-center gap-space-sm px-space-xs"><div class="relative"><img alt="Profile" class="w-9 h-9 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-low"></span></div><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface truncate">Chief Master Trainer</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Syncrum Logistics Education</span></div></div></div></aside><div class="pl-80"><header class="fixed top-0 left-80 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="hover:text-on-surface cursor-pointer font-semibold text-primary">SLEC-DTMS</span><span class="text-outline-variant font-bold">/</span><span class="text-on-surface font-label-md text-label-md">Syncrum Logistics Education Center</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center w-80"><input class="w-full px-space-sm py-space-2xs bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search curriculum, driver, batch, matrix..." type="search"/></div><div class="flex items-center gap-space-xs"><div class="inline-flex items-center gap-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface hidden xl:inline">Forklift &amp; Driver Safety Cloud</span></div></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Lead Assessor</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Syncrum Logistics Center</span></div></div></div></header><main class="w-full pt-16 px-space-xl bg-background"><div class="flex flex-col w-full pb-space-3xl gap-space-xl">
+<!-- Top Context Header & Live Status Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm uppercase tracking-wider">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Modul 02 &amp; 03 • Syncrum Paperless Operations</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mt-1">Registration &amp; Digital QR Attendance Center</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Sistem Registrasi Peserta &amp; Check-In Mandiri Berbasis QR Code SLEC (Anti-Joki &amp; Realtime Geofence)</p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-xl bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl">satellite_alt</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Geofence Status</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">SLEC Cikarang Active (±15m)</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md hover:bg-secondary transition-all shadow-sm" id="btn-sync-hris">
+<span class="material-symbols-outlined text-lg">sync</span>
+<span>Sync HRIS Syncrum</span>
+</button>
+</div>
+</div>
+<!-- Realtime Operational KPI Highlights -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider">Hadir Hari Ini</span>
+<div class="flex items-baseline gap-space-2xs mt-1">
+<span class="font-display-lg text-display-lg text-on-surface" id="kpi-hadir-count">88</span>
+<span class="font-title-md text-title-md text-on-surface-variant">/ 94 Peserta</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-2xl">how_to_reg</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full text-xs font-bold bg-secondary-container text-on-secondary-container">
+          ↑ 97.8%
+        </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tingkat Ketepatan Waktu</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary/5 pointer-events-none"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider">Terlambat (&gt;08:00)</span>
+<div class="flex items-baseline gap-space-2xs mt-1">
+<span class="font-display-lg text-display-lg text-error" id="kpi-late-count">2</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Peserta</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-xl bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-2xl">alarm_on</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-error"></span>
+<span>Batas dispensasi 08:15 WIB</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider">Belum Check-In</span>
+<div class="flex items-baseline gap-space-2xs mt-1">
+<span class="font-display-lg text-display-lg text-tertiary" id="kpi-pending-count">4</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Driver</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-xl bg-tertiary-container/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-2xl">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Push notifikasi WhatsApp terkirim</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md uppercase text-on-surface-variant tracking-wider">Rata-rata Check-In</span>
+<div class="flex items-baseline gap-space-2xs mt-1">
+<span class="font-display-lg text-display-lg text-on-surface">07:48</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant">WIB</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-2xl">timer</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-sm">schedule</span>
+<span>12 Menit sebelum kelas dibuka</span>
+</div>
+</div>
+</div>
+<!-- Split Screen: Scanner / Instructor Kiosk (45%) vs Real-Time Attendance Log (55%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Trainer Kiosk & Dynamic QR (45% -> 5 cols desktop) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Dynamic QR Kiosk Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col items-center text-center relative">
+<div class="w-full flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs text-left">
+<div class="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block">Kiosk Mode</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Trainer Display Station</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full text-xs font-bold bg-secondary-container text-on-secondary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">shield</span> Anti-Fraud Active
+          </span>
+</div>
+<!-- Session Meta Card -->
+<div class="w-full bg-surface-container rounded-xl p-space-sm my-space-sm text-left flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-primary font-bold">NEOP DRIVER 2026 - Batch 8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sesi Pagi</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">pin_drop</span> SLEC Cikarang Dojo</span>
+<span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">sports_score</span> Trainer: Ahmad S.</span>
+</div>
+</div>
+<!-- Dynamic QR Display with pulsing radar ring -->
+<div class="relative my-space-md p-space-md flex items-center justify-center">
+<!-- Animated Radar Rings -->
+<div class="absolute inset-0 rounded-3xl bg-secondary/10 animate-ping pointer-events-none"></div>
+<div class="absolute inset-2 rounded-2xl bg-primary/10 pointer-events-none"></div>
+<!-- Dynamic QR SVG Simulation with Safety Logistics Motif -->
+<div class="relative z-10 p-space-sm bg-surface-container-lowest rounded-2xl shadow-md flex flex-col items-center">
+<svg class="w-56 h-56 text-on-surface" fill="none" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<!-- QR Position Detection Patterns (Top-Left) -->
+<rect fill="#141b2b" height="50" rx="6" width="50" x="10" y="10"></rect>
+<rect fill="#ffffff" height="34" rx="4" width="34" x="18" y="18"></rect>
+<rect fill="#2a7c13" height="22" rx="2" width="22" x="24" y="24"></rect>
+<!-- QR Position Detection Patterns (Top-Right) -->
+<rect fill="#141b2b" height="50" rx="6" width="50" x="140" y="10"></rect>
+<rect fill="#ffffff" height="34" rx="4" width="34" x="148" y="18"></rect>
+<rect fill="#2a7c13" height="22" rx="2" width="22" x="154" y="24"></rect>
+<!-- QR Position Detection Patterns (Bottom-Left) -->
+<rect fill="#141b2b" height="50" rx="6" width="50" x="10" y="140"></rect>
+<rect fill="#ffffff" height="34" rx="4" width="34" x="18" y="148"></rect>
+<rect fill="#2a7c13" height="22" rx="2" width="22" x="24" y="154"></rect>
+<!-- Micro Matrix Data Dots -->
+<g fill="#141b2b">
+<circle cx="75" cy="20" r="4"></circle>
+<circle cx="95" cy="20" r="4"></circle>
+<circle cx="115" cy="20" r="4"></circle>
+<circle cx="75" cy="35" fill="#2a7c13" r="4"></circle>
+<circle cx="85" cy="45" r="4"></circle>
+<circle cx="125" cy="40" r="4"></circle>
+<circle cx="70" cy="70" r="5"></circle>
+<circle cx="90" cy="70" r="4"></circle>
+<circle cx="130" cy="70" r="5"></circle>
+<circle cx="150" cy="75" r="4"></circle>
+<circle cx="170" cy="75" r="4"></circle>
+<circle cx="75" cy="90" r="4"></circle>
+<circle cx="110" cy="95" fill="#2a7c13" r="5"></circle>
+<circle cx="125" cy="110" r="4"></circle>
+<circle cx="145" cy="100" r="4"></circle>
+<circle cx="180" cy="105" r="5"></circle>
+<circle cx="70" cy="130" r="4"></circle>
+<circle cx="95" cy="135" r="5"></circle>
+<circle cx="75" cy="155" r="4"></circle>
+<circle cx="115" cy="150" r="4"></circle>
+<circle cx="135" cy="165" fill="#2a7c13" r="5"></circle>
+<circle cx="155" cy="150" r="4"></circle>
+<circle cx="175" cy="160" r="4"></circle>
+<circle cx="90" cy="175" r="4"></circle>
+<circle cx="120" cy="180" r="4"></circle>
+<circle cx="160" cy="180" r="4"></circle>
+<circle cx="180" cy="185" r="4"></circle>
+</g>
+<!-- Central Syncrum Shield Icon Marker -->
+<rect fill="#ffffff" filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.15))" height="40" rx="10" width="40" x="80" y="80"></rect>
+<path d="M100 86L112 91V100C112 108 106 114 100 116C94 114 88 108 88 100V91L100 86Z" fill="#156100"></path>
+<path d="M96 101L99 104L105 97" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Dynamic Security Refresh Progress Bar -->
+<div class="w-full max-w-xs flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Dynamic Token Rotation</span>
+<span class="text-primary font-bold" id="timer-label">Auto-refresh dalam 24s</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container transition-all duration-1000 ease-linear rounded-full" id="qr-progress" style="width: 78%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Arahkan kamera smartphone ke layar kiosk untuk absensi mandiri.</span>
+</div>
+<div class="w-full mt-space-md pt-space-md flex items-center justify-between bg-surface-container-low rounded-xl px-space-md py-space-sm">
+<div class="flex items-center gap-space-xs text-left">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Validasi Enkripsi SHA-256</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Device Fingerprint + Local Timestamp</span>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline" id="btn-manual-toggle">
+            Form Walk-in ↓
+          </button>
+</div>
+</div>
+<!-- Walk-in / Manual Registration Modal Simulation Form Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md" id="manual-reg-card">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">person_add_alt</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Registrasi Kilat Walk-In</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Alternatif jika smartphone kendala atau peserta pengganti</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-tertiary-fixed text-on-tertiary-fixed">Trainer Override</span>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-space-sm text-left" id="form-walkin">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Nama Lengkap Peserta</label>
+<input class="w-full h-10 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="reg-name" placeholder="cth: Budi Santoso" required="" type="text" value="Budi Santoso"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Nomor Induk Karyawan (NIK)</label>
+<input class="w-full h-10 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="reg-nik" placeholder="cth: 12345" required="" type="text" value="12345"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Jabatan Operasional</label>
+<select class="w-full h-10 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="reg-role">
+<option value="Driver">Driver Angkutan Berat</option>
+<option value="Forklift Op">Forklift Reach Truck Operator</option>
+<option value="Warehouse">Warehouse Staff / Picker</option>
+<option value="Fleet Lead">Team Leader Fleet OPS</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Departemen</label>
+<input class="w-full h-10 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="reg-dept" type="text" value="OPS - Transport"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Lokasi Pelaksanaan</label>
+<input class="w-full h-10 px-space-sm bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface-variant cursor-not-allowed" id="reg-loc" readonly="" type="text" value="SLEC Cikarang Dojo"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Program Training</label>
+<input class="w-full h-10 px-space-sm bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="reg-prog" type="text" value="Safety Driving &amp; Pre-Trip Inspection"/>
+</div>
+<div class="md:col-span-2 pt-space-2xs">
+<button class="w-full h-11 rounded-lg bg-primary-container text-on-primary font-label-lg flex items-center justify-center gap-space-xs hover:bg-secondary transition-all shadow-md" type="submit">
+<span class="material-symbols-outlined text-lg">fact_check</span>
+<span>Validasi Peserta &amp; Simpan Absensi Instan</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Right Column: Real-Time Attendance Log & Device Geofence Verification (55% -> 7 cols desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Panel Head & Controls -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Real-Time Attendance Log &amp; Telemetry</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monitoring kehadiran langsung tersinkronisasi sensor geofence SLEC</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1 px-space-sm py-2 rounded-lg bg-surface-container-high text-on-surface font-label-sm hover:bg-surface-container-highest transition-colors" id="btn-export-csv">
+<span class="material-symbols-outlined text-base">download</span> Export CSV
+            </button>
+<button class="inline-flex items-center gap-1 px-space-sm py-2 rounded-lg bg-surface-container-high text-on-surface font-label-sm hover:bg-surface-container-highest transition-colors" id="btn-export-pdf">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span> PDF Rekap
+            </button>
+</div>
+</div>
+<!-- Filter & Search Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-xs bg-surface-container-low p-space-xs rounded-xl">
+<div class="md:col-span-2 relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-lg">search</span>
+<input class="w-full h-10 pl-9 pr-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="search-attendance" placeholder="Cari NIK, Nama Peserta, atau Dept..." type="search"/>
+</div>
+<div>
+<select class="w-full h-10 px-space-sm bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="filter-status">
+<option value="all">Semua Status Log</option>
+<option value="hadir">Hadir Tepat Waktu</option>
+<option value="terlambat">Terlambat</option>
+<option value="pending">Menunggu Check-in</option>
+</select>
+</div>
+</div>
+<!-- Live Table Container -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-low">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Peserta &amp; NIK</th>
+<th class="py-space-sm px-space-sm">Divisi / Jabatan</th>
+<th class="py-space-sm px-space-sm">Jam Scan</th>
+<th class="py-space-sm px-space-sm">Status Hadir</th>
+<th class="py-space-sm px-space-sm">Geofence / Device</th>
+<th class="py-space-sm px-space-sm text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-sm text-body-sm" id="attendance-tbody">
+<!-- Item 1: Budi Santoso -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors bg-surface-container-lowest">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed text-xs">
+                      BS
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Budi Santoso</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIK: 12345</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface">
+<span class="font-label-sm text-label-sm font-semibold">Driver OPS</span>
+<span class="block text-xs text-on-surface-variant">Transport Ckr</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">07:58:12</span>
+<span class="block text-[11px] text-on-surface-variant">WIB • On-Time</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Hadir
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 text-xs text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">location_on</span> Valid SLEC Ckr
+                  </span>
+<span class="block text-[11px] text-on-surface-variant">Samsung SM-A536B</span>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-lg">badge</span>
+</button>
+</td>
+</tr>
+<!-- Item 2: Andi Prasetyo -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors bg-surface-container-lowest">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary-fixed-dim flex items-center justify-center font-bold text-on-primary-fixed text-xs">
+                      AP
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Andi Prasetyo</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIK: 12890</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface">
+<span class="font-label-sm text-label-sm font-semibold">Forklift Op</span>
+<span class="block text-xs text-on-surface-variant">WH DC-1</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">07:45:03</span>
+<span class="block text-[11px] text-on-surface-variant">WIB • Early</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Hadir
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 text-xs text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">location_on</span> Valid SLEC Ckr
+                  </span>
+<span class="block text-[11px] text-on-surface-variant">Xiaomi Redmi 10</span>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-lg">badge</span>
+</button>
+</td>
+</tr>
+<!-- Item 3: Rudi Hermawan (Late) -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors bg-surface-container-lowest">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center font-bold text-on-error-container text-xs">
+                      RH
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Rudi Hermawan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIK: 13042</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface">
+<span class="font-label-sm text-label-sm font-semibold">Driver OPS</span>
+<span class="block text-xs text-on-surface-variant">Intercity Line</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-md text-label-md text-error font-semibold">08:05:44</span>
+<span class="block text-[11px] text-error">+5m Terlambat</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-xs">warning</span> Terlambat
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 text-xs text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">location_on</span> Valid SLEC Ckr
+                  </span>
+<span class="block text-[11px] text-on-surface-variant">Oppo Reno7</span>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-lg">badge</span>
+</button>
+</td>
+</tr>
+<!-- Item 4: Dimas Setiawan -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors bg-surface-container-lowest">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-xs">
+                      DS
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Dimas Setiawan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIK: 11984</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface">
+<span class="font-label-sm text-label-sm font-semibold">Warehouse</span>
+<span class="block text-xs text-on-surface-variant">Inbound Buffer</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">07:52:19</span>
+<span class="block text-[11px] text-on-surface-variant">WIB • On-Time</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Hadir
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 text-xs text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">location_on</span> Valid SLEC Ckr
+                  </span>
+<span class="block text-[11px] text-on-surface-variant">Vivo Y21T</span>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-lg">badge</span>
+</button>
+</td>
+</tr>
+<!-- Item 5: Eko Wahyudi (Pending) -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors bg-surface-container-lowest">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-on-tertiary-fixed text-xs">
+                      EW
+                    </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Eko Wahyudi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">NIK: 12553</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface">
+<span class="font-label-sm text-label-sm font-semibold">Driver OPS</span>
+<span class="block text-xs text-on-surface-variant">Cold Chain Fleet</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-md text-label-md text-outline font-semibold">--:--:--</span>
+<span class="block text-[11px] text-outline">Belum Scan</span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-xs">hourglass_empty</span> Menunggu
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 text-xs text-outline">
+<span class="material-symbols-outlined text-sm">schedule</span> Tracking GPS
+                  </span>
+<span class="block text-[11px] text-on-surface-variant">On the road</span>
+</td>
+<td class="py-space-sm px-space-sm text-right">
+<button class="p-1 rounded hover:bg-surface-container-high text-primary hover:text-secondary" title="Panggil WhatsApp">
+<span class="material-symbols-outlined text-lg">sms</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Real-Time Activity Ticker & Table Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-xs pt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Menampilkan 5 dari total 94 peserta terdaftar batch ini</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-xs py-1 rounded bg-surface-container text-on-surface font-label-sm hover:bg-surface-container-high">Sebelumnya</button>
+<span class="font-label-sm text-label-sm px-1 text-on-surface">1 / 19</span>
+<button class="px-space-xs py-1 rounded bg-surface-container text-on-surface font-label-sm hover:bg-surface-container-high">Selanjutnya</button>
+</div>
+</div>
+</div>
+<!-- Dojo Environmental Geofence & BLE Verification Beacon Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">radar</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Beacon Dojo #04 - Hallway B</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-secondary-container text-on-secondary-container">BLE 5.2 Active</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Radius toleransi 25 meter dari pusat Dojo Pelatihan Cikarang. Jaminan anti-titip absen 100%.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<button class="px-space-sm py-2 rounded-lg bg-surface-container text-on-surface font-label-sm hover:bg-surface-container-high flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">settings_remote</span> Kalibrasi Sinyal
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom ISO & Safety Compliance Banner -->
+<div class="w-full bg-inverse-surface rounded-xl p-space-lg text-inverse-on-surface shadow-md relative overflow-hidden">
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider font-bold">Standard Operating Procedure Zero-Manual Paperwork</span>
+<h4 class="font-headline-sm text-headline-sm text-inverse-on-surface mt-0.5">Audit Compliance ISO 29993 • Syncrum Driver Safety Standard</h4>
+<p class="font-body-sm text-body-sm text-surface-dim mt-0.5">Seluruh rekaman presensi ditandatangani secara kriptografis dan terhubung langsung dengan SIM-Logistik Syncrum serta HRIS Pusat.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="text-right hidden xl:flex flex-col">
+<span class="font-label-sm text-label-sm text-surface-dim">Server Integrity Token</span>
+<span class="font-label-md text-label-md text-inverse-on-surface font-mono">SLEC-CHK-2026-9904F</span>
+</div>
+<a class="px-space-md py-2.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-md font-bold hover:bg-secondary-fixed transition-colors inline-flex items-center gap-1.5 shadow-sm" href="#">
+<span class="material-symbols-outlined text-lg">policy</span>
+<span>Buka Panduan Kepatuhan</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Dynamic countdown for QR Token Refresh
+    let timeLeft = 30;
+    const timerLabel = document.getElementById('timer-label');
+    const progressBar = document.getElementById('qr-progress');
+
+    setInterval(function() {
+      timeLeft--;
+      if (timeLeft <= 0) {
+        timeLeft = 30;
+      }
+      if (timerLabel) {
+        timerLabel.textContent = 'Auto-refresh dalam ' + timeLeft + 's';
+      }
+      if (progressBar) {
+        const percentage = (timeLeft / 30) * 100;
+        progressBar.style.width = percentage + '%';
+      }
+    }, 1000);
+
+    // Filter table by status
+    const filterSelect = document.getElementById('filter-status');
+    const searchInput = document.getElementById('search-attendance');
+    const tbody = document.getElementById('attendance-tbody');
+
+    function applyFilter() {
+      if (!tbody) return;
+      const filterVal = filterSelect ? filterSelect.value.toLowerCase() : 'all';
+      const searchVal = searchInput ? searchInput.value.toLowerCase() : '';
+      const rows = tbody.querySelectorAll('tr');
+
+      rows.forEach(function(row) {
+        const rowText = row.textContent.toLowerCase();
+        let matchesFilter = true;
+
+        if (filterVal === 'hadir') {
+          matchesFilter = rowText.includes('hadir') && !rowText.includes('terlambat');
+        } else if (filterVal === 'terlambat') {
+          matchesFilter = rowText.includes('terlambat');
+        } else if (filterVal === 'pending') {
+          matchesFilter = rowText.includes('menunggu');
+        }
+
+        const matchesSearch = rowText.includes(searchVal);
+        row.style.display = (matchesFilter && matchesSearch) ? '' : 'none';
+      });
+    }
+
+    if (filterSelect) filterSelect.addEventListener('change', applyFilter);
+    if (searchInput) searchInput.addEventListener('input', applyFilter);
+
+    // Walk-in form submit handler
+    const formWalkin = document.getElementById('form-walkin');
+    if (formWalkin) {
+      formWalkin.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nameInput = document.getElementById('reg-name');
+        const nikInput = document.getElementById('reg-nik');
+        const roleSelect = document.getElementById('reg-role');
+        const deptInput = document.getElementById('reg-dept');
+
+        const name = nameInput ? nameInput.value : 'Peserta Baru';
+        const nik = nikInput ? nikInput.value : '00000';
+        const role = roleSelect ? roleSelect.value : 'Driver OPS';
+        const dept = deptInput ? deptInput.value : 'Transport';
+
+        const now = new Date();
+        const timeStr = String(now.getHours()).padStart(2, '0') + ':' +
+                        String(now.getMinutes()).padStart(2, '0') + ':' +
+                        String(now.getSeconds()).padStart(2, '0');
+
+        // Append new attendee to the top of the table
+        if (tbody) {
+          const newRow = document.createElement('tr');
+          newRow.className = 'hover:bg-surface-container-lowest/80 transition-colors bg-surface-container-lowest animate-fade-in';
+          newRow.innerHTML = `
+            <td class="py-space-sm px-space-md">
+              <div class="flex items-center gap-space-xs">
+                <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-bold text-on-secondary-container text-xs">
+                  ${name.split(' ').map(n => n[0]).join('').substring(0,2).toUpperCase()}
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-label-md text-label-md text-on-surface font-bold">${name}</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant">NIK: ${nik}</span>
+                </div>
+              </div>
+            </td>
+            <td class="py-space-sm px-space-sm text-on-surface">
+              <span class="font-label-sm text-label-sm font-semibold">${role}</span>
+              <span class="block text-xs text-on-surface-variant">${dept}</span>
+            </td>
+            <td class="py-space-sm px-space-sm">
+              <span class="font-label-md text-label-md text-on-surface font-semibold">${timeStr}</span>
+              <span class="block text-[11px] text-primary">Walk-In Valid</span>
+            </td>
+            <td class="py-space-sm px-space-sm">
+              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-secondary-container text-on-secondary-container">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Hadir
+              </span>
+            </td>
+            <td class="py-space-sm px-space-sm">
+              <span class="inline-flex items-center gap-1 text-xs text-secondary font-semibold">
+                <span class="material-symbols-outlined text-sm">badge</span> Kiosk Trainer
+              </span>
+              <span class="block text-[11px] text-on-surface-variant">Manual Override</span>
+            </td>
+            <td class="py-space-sm px-space-sm text-right">
+              <button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-primary">
+                <span class="material-symbols-outlined text-lg">badge</span>
+              </button>
+            </td>
+          `;
+          tbody.insertBefore(newRow, tbody.firstChild);
+        }
+
+        // Increment Hadir counter
+        const hadirCountEl = document.getElementById('kpi-hadir-count');
+        if (hadirCountEl) {
+          const currentHadir = parseInt(hadirCountEl.textContent, 10) || 88;
+          hadirCountEl.textContent = currentHadir + 1;
+        }
+
+        // Decrement pending counter
+        const pendingCountEl = document.getElementById('kpi-pending-count');
+        if (pendingCountEl) {
+          const currentPending = parseInt(pendingCountEl.textContent, 10) || 4;
+          if (currentPending > 0) {
+            pendingCountEl.textContent = currentPending - 1;
+          }
+        }
+
+        alert('Peserta ' + name + ' (NIK: ' + nik + ') berhasil diregistrasikan ke Sesi NEOP Driver Batch 8.');
+      });
+    }
+
+    // Interactive buttons feedback
+    const btnSync = document.getElementById('btn-sync-hris');
+    if (btnSync) {
+      btnSync.addEventListener('click', function() {
+        btnSync.innerHTML = '<span class="material-symbols-outlined text-lg animate-spin">sync</span><span>Menyinkronkan...</span>';
+        setTimeout(function() {
+          btnSync.innerHTML = '<span class="material-symbols-outlined text-lg">check_circle</span><span>Tersinkron HRIS</span>';
+          setTimeout(function() {
+            btnSync.innerHTML = '<span class="material-symbols-outlined text-lg">sync</span><span>Sync HRIS Syncrum</span>';
+          }, 2500);
+        }, 1200);
+      });
+    }
+
+    const btnCsv = document.getElementById('btn-export-csv');
+    if (btnCsv) {
+      btnCsv.addEventListener('click', function() {
+        alert('Mengunduh Log Presensi SLEC-Batch8.csv...');
+      });
+    }
+
+    const btnPdf = document.getElementById('btn-export-pdf');
+    if (btnPdf) {
+      btnPdf.addEventListener('click', function() {
+        alert('Menyiapkan Rekapitulasi PDF Resmi SLEC Bersertifikat Geofence...');
+      });
+    }
+  })();
+</script></main></div></body></html>

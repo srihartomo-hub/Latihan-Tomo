@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#c0cab6","primary-fixed":"#a0f882","on-tertiary-fixed-variant":"#52452b","surface-dim":"#d3daef","on-tertiary-fixed":"#241a05","background":"#f9f9ff","surface-container-highest":"#dce2f7","on-surface":"#141b2b","surface":"#f9f9ff","surface-variant":"#dce2f7","inverse-on-surface":"#edf0ff","error":"#ba1a1a","on-primary-container":"#c1ffa8","primary":"#156100","on-secondary-fixed":"#052100","inverse-surface":"#293040","on-secondary":"#ffffff","on-background":"#141b2b","on-surface-variant":"#40493b","surface-bright":"#f9f9ff","on-primary-fixed-variant":"#115300","surface-container":"#e9edff","secondary-fixed-dim":"#8bda6a","surface-tint":"#196d00","tertiary-container":"#7a6a4d","tertiary":"#605237","tertiary-fixed":"#f5e0bc","on-primary-fixed":"#032100","on-tertiary-container":"#ffeccd","on-primary":"#ffffff","on-secondary-container":"#29730c","surface-container-high":"#e1e8fd","inverse-primary":"#85db69","secondary-fixed":"#a5f783","tertiary-fixed-dim":"#d8c4a2","secondary":"#226d03","on-secondary-fixed-variant":"#165200","on-tertiary":"#ffffff","primary-container":"#2a7c13","error-container":"#ffdad6","on-error":"#ffffff","surface-container-low":"#f1f3ff","secondary-container":"#a5f783","surface-container-lowest":"#ffffff","on-error-container":"#93000a","outline":"#707a69","primary-fixed-dim":"#85db69"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-2xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-2xs":"0.25rem","space-3xl":"3rem","space-xl":"2rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-xs":"0.5rem","container-max":"1440px"},fontFamily:{"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"display-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-80 bg-surface-container-low z-50 flex flex-col justify-between py-space-md px-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm px-space-xs py-space-2xs"><img alt="SLEC Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrEyZVRa-9R5UnFQPMIXgQaiLyLSQAzJOlf5cl6UfZ4RQZK_sQiPW26na23x2_3oca0tt0glMvvHz1NShCz7zmHOclngifFqxvzEuWpckI4fRjbYqP865Brm1tTEGYjiAKTXNfN_qyIfoiXOrmStw3L7o9kZDi-s3OInFZKjdapp8j-9WwHFi6sCE5EdD078KuGVCYH8mGwzSyp1-_pE5P2HsqZ6G2D8lB6UOuamL8lrTZ5Hw3gMhNkA"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-2xs"><span class="font-label-lg text-label-lg text-on-surface font-bold truncate">SLEC-DTMS</span><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-secondary-container text-on-secondary-container leading-none">v2.4</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Syncrum Logistics Education Center</span></div></div><div class="h-px w-full bg-surface-container-highest"></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="mieruka-dashboard" href="#">Mieruka Dashboard (Executive &amp; KPI)</a><a aria-current="page" class="px-space-sm py-space-xs rounded-lg transition-colors truncate bg-primary-container text-on-primary font-bold shadow-sm" data-path="training-calendar-planning" href="#">Training Calendar &amp; Planning</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="training-management-lms" href="#">Training Management &amp; LMS</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="registration-attendance" href="#">Registration &amp; Digital Attendance</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="assessment-rubric" href="#">Assessment &amp; Practical Rubric</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="competency-matrix" href="#">Competency Matrix (Skill Radar)</a><a class="px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md truncate" data-path="certificate-verification" href="#">Certificate &amp; Verification</a></nav></div><div class="flex flex-col gap-space-sm"><div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-space-2xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface font-bold">Logistics Center Fleet</span><span class="inline-flex items-center gap-1 text-[11px] text-secondary font-semibold"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>Online</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">SLEC Real-Time Telemetry Active</span></div><div class="h-px w-full bg-surface-container-highest"></div><div class="flex items-center gap-space-sm px-space-xs"><div class="relative"><img alt="Profile" class="w-9 h-9 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-low"></span></div><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface truncate">Chief Master Trainer</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Syncrum Logistics Education</span></div></div></div></aside><div class="pl-80"><header class="fixed top-0 left-80 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="hover:text-on-surface cursor-pointer font-semibold text-primary">SLEC-DTMS</span><span class="text-outline-variant font-bold">/</span><span class="text-on-surface font-label-md text-label-md">Syncrum Logistics Education Center</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center w-80"><input class="w-full px-space-sm py-space-2xs bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search curriculum, driver, batch, matrix..." type="search"/></div><div class="flex items-center gap-space-xs"><div class="inline-flex items-center gap-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface hidden xl:inline">Forklift &amp; Driver Safety Cloud</span></div></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight font-semibold">Lead Assessor</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Syncrum Logistics Center</span></div></div></div></header><main class="w-full pt-16 px-space-xl bg-background"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Dynamic Atmospheric Glow & Micro Header -->
+<div class="relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-surface-container to-surface-container-high p-space-lg mb-space-lg shadow-sm">
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm tracking-wide uppercase">Operasional Terjadwal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Syncrum Education Multi-Hub
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Training Calendar &amp; Logistics Curriculum Planning</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Jadwal terintegrasi NEOP Driver, Forklift Training, ESD Campaign, Dojo Express &amp; Refreshment terdistribusi di Cikarang Central, Cibitung, dan Karawang Hub.
+        </p>
+</div>
+<!-- Quick Actions / View Mode Switcher -->
+<div class="flex items-center gap-space-sm self-start md:self-center">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+          Export Rencana (.xlsx)
+        </button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary text-on-primary hover:bg-primary-container shadow-sm font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+          Buat Jadwal Baru
+        </button>
+</div>
+</div>
+</div>
+<!-- Operational Filter Strip & Horizon Controls -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-center mb-space-lg">
+<!-- Hub / Category Selectors (7 cols) -->
+<div class="lg:col-span-7 flex flex-wrap items-center gap-space-sm">
+<div class="relative min-w-[230px]">
+<div class="absolute inset-y-0 left-0 flex items-center pl-space-sm pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[18px]">warehouse</span>
+</div>
+<select class="w-full pl-9 pr-8 py-2 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer">
+<option>Semua Hub (Cikarang Central, Cibitung, Karawang)</option>
+<option>Hub Cikarang Central (Main Dojo &amp; Circuit)</option>
+<option>Hub Cibitung Distribution &amp; Staging</option>
+<option>Hub Karawang Technopark Training Grounds</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="relative min-w-[190px]">
+<div class="absolute inset-y-0 left-0 flex items-center pl-space-sm pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[18px]">category</span>
+</div>
+<select class="w-full pl-9 pr-8 py-2 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary appearance-none cursor-pointer">
+<option>Semua Modul Silabus</option>
+<option>NEOP Driver Induction</option>
+<option>Forklift Certification (Class I &amp; II)</option>
+<option>Safety &amp; K3 Logistics Standard</option>
+<option>Dojo Express &amp; Inspeksi</option>
+<option>Leadership &amp; Mentoring</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Live Filter Chips -->
+<div class="hidden xl:flex items-center gap-space-2xs">
+<span class="px-space-xs py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+          Aktif: 6 Batch Berjalan
+        </span>
+</div>
+</div>
+<!-- Month Navigation & Calendar View Switch (5 cols) -->
+<div class="lg:col-span-5 flex items-center justify-between lg:justify-end gap-space-sm">
+<div class="inline-flex rounded-lg p-1 bg-surface-container-high shadow-inner">
+<button class="px-space-sm py-1 rounded-md text-on-primary bg-primary font-label-sm text-label-sm shadow-sm transition-all" id="btn-view-month">Bulanan</button>
+<button class="px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" id="btn-view-week">Mingguan</button>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-xs py-1 rounded-lg shadow-sm">
+<button class="p-1 rounded text-on-surface hover:bg-surface-container transition-colors" title="Bulan Sebelumnya">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="font-title-md text-title-md text-on-surface px-space-xs whitespace-nowrap">September 2026</span>
+<button class="p-1 rounded text-on-surface hover:bg-surface-container transition-colors" title="Bulan Berikutnya">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<button class="px-space-sm py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors">
+        Hari Ini
+      </button>
+</div>
+</div>
+<!-- Main Workspace: Asymmetric 12-Column Grid (Calendar 8 Col + Detail Drawer 4 Col) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Calendar Table Container (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Calendar Days Header -->
+<div class="grid grid-cols-7 bg-surface-container-low text-center font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider py-space-xs">
+<span class="text-error font-bold">Minggu</span>
+<span>Senin</span>
+<span>Selasa</span>
+<span>Rabu</span>
+<span>Kamis</span>
+<span>Jumat</span>
+<span class="text-secondary font-bold">Sabtu</span>
+</div>
+<!-- 5-Week Grid Matrix -->
+<div class="grid grid-cols-7 auto-rows-[118px] bg-surface-container-high/40 gap-px">
+<!-- Aug 31 (Prev Month) -->
+<div class="bg-surface-container-lowest/60 p-space-2xs flex flex-col justify-between text-outline">
+<span class="font-label-sm text-label-sm opacity-50">31</span>
+</div>
+<!-- Sept 1 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">1</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 2 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">2</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 3 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">3</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 4 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">4</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 5 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-secondary font-bold">5</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 6 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-error font-bold">6</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 7: EVENT 1 - NEOP Driver 2026 (Selected state by default) -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between ring-2 ring-primary rounded-sm shadow-sm cursor-pointer transition-all" onclick="selectEvent('neop')">
+<div class="flex items-center justify-between">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">7</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+</div>
+<div class="flex flex-col gap-0.5 p-1 rounded bg-primary-container text-on-primary">
+<span class="font-label-sm text-[10px] leading-tight font-bold truncate">NEOP Driver '26 (B8)</span>
+<span class="font-body-sm text-[9px] text-on-primary-container leading-none truncate">08:00 • Ahmad • 30 Pax</span>
+</div>
+</div>
+<!-- Sept 8 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors cursor-pointer">
+<span class="font-label-sm text-label-sm text-on-surface">8</span>
+<div class="p-1 rounded bg-primary/10 text-primary">
+<span class="font-label-sm text-[10px] leading-tight font-semibold truncate block">NEOP Day 2 - Circuit</span>
+</div>
+</div>
+<!-- Sept 9: EVENT 2 - Forklift Basic & Loading -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors cursor-pointer" onclick="selectEvent('forklift')">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">9</span>
+<div class="flex flex-col gap-0.5 p-1 rounded bg-secondary-container text-on-secondary-container">
+<span class="font-label-sm text-[10px] leading-tight font-bold truncate">Forklift Basic Op</span>
+<span class="font-body-sm text-[9px] text-on-secondary-container leading-none truncate">Budi H. • Dojo B • 15 Pax</span>
+</div>
+</div>
+<!-- Sept 10 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">10</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 11: EVENT 3 - ESD Campaign -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors cursor-pointer" onclick="selectEvent('esd')">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">11</span>
+<div class="flex flex-col gap-0.5 p-1 rounded bg-tertiary-container text-on-tertiary-container">
+<span class="font-label-sm text-[10px] leading-tight font-bold truncate">ESD Campaign &amp; K3</span>
+<span class="font-body-sm text-[9px] leading-none truncate">Hybrid • 45 Peserta</span>
+</div>
+</div>
+<!-- Sept 12: EVENT 4 - Refresh Safety Driving -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors cursor-pointer" onclick="selectEvent('refresh')">
+<span class="font-label-sm text-label-sm text-secondary font-bold">12</span>
+<div class="flex flex-col gap-0.5 p-1 rounded bg-surface-container-highest text-on-surface">
+<span class="font-label-sm text-[10px] leading-tight font-bold truncate">Defensive Driving</span>
+<span class="font-body-sm text-[9px] text-on-surface-variant leading-none truncate">Sirkuit SLEC • 25 Drv</span>
+</div>
+</div>
+<!-- Sept 13 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-error font-bold">13</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 14 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">14</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 15: EVENT 5 - Dojo Express -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors cursor-pointer" onclick="selectEvent('dojo')">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">15</span>
+<div class="flex flex-col gap-0.5 p-1 rounded bg-secondary/15 text-secondary">
+<span class="font-label-sm text-[10px] leading-tight font-bold truncate">Dojo Express: Trip</span>
+<span class="font-body-sm text-[9px] leading-none truncate">Insp. Std • 20 Pax</span>
+</div>
+</div>
+<!-- Sept 16 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">16</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 17: EVENT 6 - Coaching & Mentoring -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors cursor-pointer" onclick="selectEvent('coaching')">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">17</span>
+<div class="flex flex-col gap-0.5 p-1 rounded bg-primary-container text-on-primary">
+<span class="font-label-sm text-[10px] leading-tight font-bold truncate">Coaching Spv Log</span>
+<span class="font-body-sm text-[9px] text-on-primary-container leading-none truncate">Auditorium • 10 Spv</span>
+</div>
+</div>
+<!-- Sept 18 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">18</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 19 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-secondary font-bold">19</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 20 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-error font-bold">20</span>
+<div class="w-full"></div>
+</div>
+<!-- Sept 21 to 27 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">21</span>
+</div>
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">22</span>
+</div>
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">23</span>
+<div class="p-1 rounded bg-surface-container-high text-on-surface-variant">
+<span class="font-label-sm text-[10px] truncate block">Pre-Trip Calibration</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">24</span>
+</div>
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">25</span>
+</div>
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-secondary font-bold">26</span>
+</div>
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-error font-bold">27</span>
+</div>
+<!-- Sept 28 to Oct 4 -->
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">28</span>
+<div class="p-1 rounded bg-secondary-container text-on-secondary-container">
+<span class="font-label-sm text-[10px] truncate block font-bold">Reach Truck Assess</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">29</span>
+</div>
+<div class="bg-surface-container-lowest p-space-2xs flex flex-col justify-between hover:bg-surface-container-low/50 transition-colors">
+<span class="font-label-sm text-label-sm text-on-surface">30</span>
+</div>
+<div class="bg-surface-container-lowest/60 p-space-2xs flex flex-col justify-between text-outline">
+<span class="font-label-sm text-label-sm opacity-50">1</span>
+</div>
+<div class="bg-surface-container-lowest/60 p-space-2xs flex flex-col justify-between text-outline">
+<span class="font-label-sm text-label-sm opacity-50">2</span>
+</div>
+<div class="bg-surface-container-lowest/60 p-space-2xs flex flex-col justify-between text-outline">
+<span class="font-label-sm text-label-sm opacity-50">3</span>
+</div>
+<div class="bg-surface-container-lowest/60 p-space-2xs flex flex-col justify-between text-outline">
+<span class="font-label-sm text-label-sm opacity-50">4</span>
+</div>
+</div>
+</div>
+<!-- Calendar Legend Strip -->
+<div class="flex flex-wrap items-center gap-space-md p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Kategori Silabus:</span>
+<div class="flex items-center gap-1.5 font-body-sm text-body-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+          NEOP Drivers (Intensif)
+        </div>
+<div class="flex items-center gap-1.5 font-body-sm text-body-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
+          Forklift &amp; Material Handling
+        </div>
+<div class="flex items-center gap-1.5 font-body-sm text-body-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+          ESD &amp; K3 Compliance
+        </div>
+<div class="flex items-center gap-1.5 font-body-sm text-body-sm text-on-surface">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+          Dojo Express Refresher
+        </div>
+</div>
+</div>
+<!-- Right Drawer: Agenda Detail Pane (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-primary"></div>
+<!-- Header & Batch Metadata -->
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">NEOP Driver Core</span>
+<span class="font-label-sm text-label-sm text-outline">BATCH-08-2026</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1" id="agenda-title">NEOP Driver 2026</h2>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1 mt-0.5" id="agenda-date">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span>
+              7 - 9 September 2026 (08:00 - 16:00 WIB)
+            </span>
+</div>
+<span class="px-space-xs py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">Terkonfirmasi</span>
+</div>
+<!-- Instructor Profile Card -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Senior logistics driving instructor in neat uniform with reflective vest and safety helmet smiling confidently in training center warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Bf642bOsEQYme7AwhOHs6b4D8pe8NON0bruP2SCBDL-jqvoJWh07ResZt-a5y4_qZDKR6pVCG_cyLFdhd3CT5_gnXsnnl-5tYScelQ0SQYWCYEKYhCqsKnLUuftyeZ4Og7LvPL-Ku-Z_Fy_kWF2kuTRl9feRd6Oe4RimWRuuGwFBbbCJOgLNjS4zenDmbKlP7WQBZk0QoUBBP-0mZHrrFK7BUrPRAt1Yiu8p4K9rt_mqg_bve3Iv1A"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate" id="trainer-name">Ahmad Subagio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Chief Master Driver Trainer</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              Sertifikasi BNSP &amp; Kemenaker
+            </span>
+</div>
+</div>
+<!-- Operational Facility & Quota Stats -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-high/50 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+              Lokasi Sirkuit
+            </span>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-1">Dojo 1 &amp; Track A</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Cikarang Central Hub</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-high/50 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">groups</span>
+              Kapasitas Kuota
+            </span>
+<span class="font-label-md text-label-md text-primary font-bold mt-1">30 / 30 Peserta</span>
+<span class="font-body-sm text-body-sm text-on-primary-fixed-variant font-semibold">Status Penuh (100%)</span>
+</div>
+</div>
+<!-- Practical Curriculum Timeline / Agenda Days -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold">Rincian Kurikulum Agenda</span>
+<div class="flex flex-col gap-space-xs mt-1">
+<!-- Day 1 -->
+<div class="flex items-start gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">1</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Day 1: Safety Driving Foundation &amp; APD</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Regulasi logistik nasional, kepatuhan APD 5S, tes kesiapan fisik pre-trip.</span>
+</div>
+</div>
+<!-- Day 2 -->
+<div class="flex items-start gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">2</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Day 2: Trip Inspection &amp; Defensive Behavior</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemeriksaan armada 32 poin, blindspot tracking, defensive road mindset.</span>
+</div>
+</div>
+<!-- Day 3 -->
+<div class="flex items-start gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shrink-0">3</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Day 3: Praktik Lapangan Sirkuit &amp; Post-Test</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ujian slalom manuver sirkuit Cikarang, simulasi docking malam, evaluasi akhir.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Action Buttons -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full flex items-center justify-center gap-space-xs py-2.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md font-semibold shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+            Generate QR Absensi Digital
+          </button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="flex items-center justify-center gap-space-2xs py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download_for_offline</span>
+              Silabus PDF
+            </button>
+<button class="flex items-center justify-center gap-space-2xs py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_calendar</span>
+              Ubah Jadwal
+            </button>
+</div>
+</div>
+</div>
+<!-- Quick Operational Dispatch Note -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Instruksi Tim Fasilitas:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Armada Wingbox #04 &amp; #08 siap di Jalur Docking A sebelum 07:30 WIB.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Quick Stats & Fleet Instructors Overview -->
+<div class="mt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Stat 1: Total Training Sessions -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Total Sesi Terjadwal</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-display-lg text-display-lg text-on-surface">14</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Sesi Aktif</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+          +18% peningkatan kapasitas bulan ini
+        </span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">event_available</span>
+</div>
+</div>
+<!-- Stat 2: Total Instruction Hours -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Jam Instruksi Lapangan</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-display-lg text-display-lg text-on-surface">280</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Jam Kumulatif</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+          92% rasio keterisian pelatih
+        </span>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+</div>
+<!-- Stat 3: Dojo Ready Facilities -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Fasilitas Dojo Siap Pakai</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-display-lg text-display-lg text-primary">3 / 3</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Situs Operasional</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+          Cikarang, Cibitung &amp; Karawang Siap
+        </span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[24px]">domain_verification</span>
+</div>
+</div>
+</div>
+<!-- Dojo Multi-Site Visual Gallery Strip -->
+<div class="mt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="relative h-40 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Logistics training indoor dojo room with scale model truck docking simulator and floor safety markings at SLEC Cikarang" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeA8kB26HHMjfSdH91s5y9eXtMIdqdOIbQNXrRujgm245t3T8qH7ln2U4OuaQnen8UUkSWdeLTp_-4nJCKogHuwTpEeSYcPMZMp653LktLw5m-rVnN605cnb9Y1RNUohkRE2nYA17DjKZO-FnTcn8-exhXf5C_2lzmqdQ62qTTpN-CYu4I-l9fq2eEzn418Rxn7IQYls5tPJplPPSVcVsmubgpOMtaIU4RneKOzOQx9ORaj6ooRh2eeQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-space-sm flex flex-col justify-end text-white">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold uppercase">Dojo Cikarang Central</span>
+<span class="font-title-md text-title-md font-bold">Simulator Docking &amp; Handling</span>
+</div>
+</div>
+<div class="relative h-40 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Outdoor heavy vehicle maneuver testing circuit with orange cones and asphalt tracks for commercial logistics fleet drivers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTR9kMUCUnE-1vjfvZg-JgbTVL703IHaO6UedjGCr1IstnXW-F8bkQdA4hVq8OHL-PyjlxJ0OoxA8HpYU7yoB8c7FRWzbxnN8LTZvCTuuhRHrNqTxpEXHrqQUcjLkmezRXh8tMYC7sMlNMTFiTkBwVWiS0p2sAQrTpL6qV1XfNPGKh5uw4jk71-GXJkmwMU1STkUNqElh0QN4tWkLPuUy1nsyIIS6xDROaEUeMk8pfDPIx9wtCZOWFUA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-space-sm flex flex-col justify-end text-white">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold uppercase">Sirkuit Luar Karawang</span>
+<span class="font-title-md text-title-md font-bold">Track Manuver &amp; Blindspot 360</span>
+</div>
+</div>
+<div class="relative h-40 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Electric forklift training arena in a high-bay warehouse dojo with pallet racking systems at SLEC Cibitung" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDzBmEqzHhnOcV62znefg82ioSr8LVKajUw8s89LqrNGz_POgRMehn6PHqjeKCTqXNy6WcWOjbAaEnR9NkxY45Qzk77kURSlINkkaZP3l0A9AtwAhHfXhlCQwFLO-UYr-0QmZvsuby1YJiVaJ6E0zsEwt8viPfUbhRqJiFiz6lHVD5hFPMALR6k-nNYBFMSjQF-nMy9f9jKh5CBRsn5-p2cWs6SJQJzWgIJERJFicPnhnHCd_RRjiOyw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-space-sm flex flex-col justify-end text-white">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold uppercase">Arena Forklift Cibitung</span>
+<span class="font-title-md text-title-md font-bold">Stacking &amp; Racking Precision</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple event handler for calendar interactive selection
+  function selectEvent(eventType) {
+    const titleEl = document.getElementById('agenda-title');
+    const dateEl = document.getElementById('agenda-date');
+    const trainerEl = document.getElementById('trainer-name');
+
+    if (!titleEl || !dateEl || !trainerEl) return;
+
+    switch(eventType) {
+      case 'forklift':
+        titleEl.textContent = 'Forklift Basic & Loading Op';
+        dateEl.innerHTML = '<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span> 9 September 2026 (08:30 - 15:30 WIB)';
+        trainerEl.textContent = 'Budi Hartono (Master Forklift Assessor)';
+        break;
+      case 'esd':
+        titleEl.textContent = 'ESD Campaign & K3 Logistics';
+        dateEl.innerHTML = '<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span> 11 September 2026 (09:00 - 12:00 WIB)';
+        trainerEl.textContent = 'Dewi Anggraini (Safety & K3 Specialist)';
+        break;
+      case 'refresh':
+        titleEl.textContent = 'Refresh Safety Driving & Def Driving';
+        dateEl.innerHTML = '<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span> 12 September 2026 (08:00 - 17:00 WIB)';
+        trainerEl.textContent = 'Ahmad Subagio & Tim Circuit';
+        break;
+      case 'dojo':
+        titleEl.textContent = 'Dojo Express: Trip Inspection';
+        dateEl.innerHTML = '<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span> 15 September 2026 (13:00 - 16:30 WIB)';
+        trainerEl.textContent = 'Hendra Pratama (Vehicle Inspection Lead)';
+        break;
+      case 'coaching':
+        titleEl.textContent = 'Coaching Supervisor Logistik';
+        dateEl.innerHTML = '<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span> 17 September 2026 (09:00 - 15:00 WIB)';
+        trainerEl.textContent = 'Ir. Suroso Hadi (Head of Education SLEC)';
+        break;
+      default:
+        titleEl.textContent = 'NEOP Driver 2026 (Batch 8)';
+        dateEl.innerHTML = '<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span> 7 - 9 September 2026 (08:00 - 16:00 WIB)';
+        trainerEl.textContent = 'Ahmad Subagio';
+        break;
+    }
+  }
+
+  // Toggle View Buttons (Month / Week)
+  const btnMonth = document.getElementById('btn-view-month');
+  const btnWeek = document.getElementById('btn-view-week');
+
+  if (btnMonth && btnWeek) {
+    btnMonth.addEventListener('click', () => {
+      btnMonth.className = 'px-space-sm py-1 rounded-md text-on-primary bg-primary font-label-sm text-label-sm shadow-sm transition-all';
+      btnWeek.className = 'px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all';
+    });
+
+    btnWeek.addEventListener('click', () => {
+      btnWeek.className = 'px-space-sm py-1 rounded-md text-on-primary bg-primary font-label-sm text-label-sm shadow-sm transition-all';
+      btnMonth.className = 'px-space-sm py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all';
+    });
+  }
+</script></main></div></body></html>

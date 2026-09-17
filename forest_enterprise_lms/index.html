@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Forest Enterprise LMS dashboard" />
+    <title>Forest LMS | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260910-red-slec-hero" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#home">
+          <img class="brand-logo" src="slec-logo.png" alt="Logo SLEC" />
+        </a>
+        <p class="nav-label">Workspace</p>
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a class="nav-item" href="#home">⌂ <span>Home</span></a>
+          <a class="nav-item" href="#dashboard">⌂ <span>Dashboard</span></a>
+          <a class="nav-item" href="#attendance">♨ <span>Absensi Digital</span></a>
+          <a class="nav-item" href="#program-training">▣ <span>Program training</span></a>
+          <a class="nav-item" href="#materials">▤ <span>Materi Training</span></a>
+          <a class="nav-item" href="#skill-matrix">▥ <span>Matriks Skill Driver</span></a>
+          <a class="nav-item" href="#monthly-report">▤ <span>Laporan Bulanan</span></a>
+          <div class="nav-group">
+            <button class="nav-item nav-group-toggle" id="masterDataToggle" type="button" aria-expanded="false">▦ <span>Master Data</span><b>⌄</b></button>
+            <div class="subnav" id="masterDataMenu" hidden>
+              <a class="subnav-item" href="#data-driver">Data Driver</a>
+              <a class="subnav-item" href="#data-trainer">Data Trainer</a>
+            </div>
+          </div>
+          <a class="nav-item" href="#certificate-list">◇ <span>Laporan sertifikat</span></a>
+          <a class="nav-item" href="#attendance-list">▤ <span>List Daftar</span></a>
+        </nav>
+        <div class="sidebar-footer">
+          <p class="nav-label">Support</p>
+          <a class="nav-item" href="#help">? <span>Pusat bantuan</span></a>
+          <button class="profile-mini" id="profileButton" type="button"><span class="avatar">T0</span><span><strong>T0M0</strong><small>Administrator</small></span><b>•••</b></button>
+        </div>
+      </aside>
+
+      <main class="content dashboard-landing">
+        <header class="topbar">
+          <button class="menu-button" id="menuButton" type="button" aria-label="Buka menu">☰</button>
+          <div class="breadcrumb"><strong>Beranda</strong></div>
+          <div class="topbar-actions">
+            <button class="secondary-button dashboard-pdf-button" id="downloadDashboardPdfButton" type="button">Download PDF ↓</button>
+            <button class="icon-button refresh-button" id="refreshButton" type="button" aria-label="Refresh dashboard" title="Refresh dashboard">↻</button>
+            <button class="icon-button" id="themeButton" type="button" aria-label="Ubah tema">☼</button>
+            <button class="notification-button" id="notificationButton" type="button" aria-label="Notifikasi">♧<i></i></button>
+          </div>
+        </header>
+
+        <section class="welcome" id="home">
+          <div>
+            <p class="eyebrow">SLEC DIGITAL TRAINING</p>
+            <h1>Selamat Datang di SLEC Digital Training Management System</h1>
+            <p class="welcome-copy">Platform pengelolaan training, sertifikasi, dan pengembangan kompetensi digital.</p>
+            <div class="landing-copy">
+              <p>Kelola program training, materi pembelajaran, kompetensi driver, dan sertifikasi dalam satu platform terintegrasi.</p>
+              <div class="landing-actions"><button class="primary-button" id="exploreButton" type="button">→ Mulai Jelajahi</button><button class="secondary-button" id="guideButton" type="button">▣ Lihat Panduan</button></div>
+            </div>
+          </div>
+        </section>
+        <section class="landing-menu-section" id="home-menu">
+          <p class="eyebrow">AKSES FITUR UTAMA</p>
+          <h2>Pilih Menu Utama</h2>
+          <p class="landing-menu-copy">Akses fitur utama untuk mengelola pelatihan dan pengembangan kompetensi.</p>
+          <div class="landing-menu-grid">
+            <button class="landing-menu-card" data-target="#program-training"><span class="landing-menu-icon">▣</span><span><strong>Program Training</strong><small>Kelola NEOP, Refresh Training, dan Development Training.</small></span><b>›</b></button>
+            <button class="landing-menu-card" data-target="#materials"><span class="landing-menu-icon">▤</span><span><strong>Materi Training</strong><small>Akses materi in-class, praktik, dan evaluasi.</small></span><b>›</b></button>
+            <button class="landing-menu-card" data-target="#skill-matrix"><span class="landing-menu-icon">▦</span><span><strong>Matriks Skill Driver</strong><small>Pantau kompetensi driver dan perkembangan.</small></span><b>›</b></button>
+          </div>
+        </section>
+        <section class="dashboard-summary">
+          <section class="metric-grid" id="dashboard" aria-label="Ringkasan metrik management">
+            <article class="metric-card"><div class="metric-icon green">↗</div><p>Total progress</p><strong id="progressMetric">68%</strong><span class="trend">+12% bulan ini</span><div class="progress-bar"><span id="metricProgressBar"></span></div></article>
+            <article class="metric-card"><div class="metric-icon orange">◷</div><p>Kehadiran training</p><strong>92<span class="unit">%</span></strong><span class="trend">+5% bulan ini</span></article>
+            <article class="metric-card"><div class="metric-icon blue">✓</div><p>Program selesai</p><strong id="completedMetric">4<span class="unit">/ 8</span></strong><span class="trend">50% dari total program</span></article>
+            <article class="metric-card"><div class="metric-icon purple">◉</div><p>Jumlah peserta tahun berjalan</p><strong id="annualParticipantsMetric">0</strong><span class="trend">Total peserta Januari - Desember</span></article>
+          </section>
+        </section>
+
+        <section class="panel materials-panel" id="materials">
+          <div class="panel-heading"><div><p class="eyebrow">PUSTAKA TRAINING</p><h2>Materi Training</h2></div><span class="week-label">3 materi tersedia</span></div>
+          <div class="materials-grid">
+            <article class="material-card"><div class="material-icon green">N</div><div><span class="tag">PROGRAM TRAINING</span><h3>Materi NEOP</h3><p>Defensive driving kendaraan berat dan teknik operasi forklift.</p><button class="secondary-button material-button" type="button" data-material="NEOP">Buka materi →</button></div></article>
+            <article class="material-card"><div class="material-icon blue">R</div><div><span class="tag">PROGRAM TRAINING</span><h3>Materi Refresh Training</h3><p>Materi penyegaran kompetensi dan standar kerja.</p><button class="secondary-button material-button" type="button" data-material="Refresh Training">Buka materi →</button></div></article>
+            <article class="material-card"><div class="material-icon orange">I</div><div><span class="tag">PROGRAM TRAINING</span><h3>Materi Insidental Training</h3><p>Materi pelatihan sesuai kebutuhan dan isu aktual.</p><button class="secondary-button material-button" type="button" data-material="Insidental Training">Buka materi →</button></div></article>
+          </div>
+        </section>
+        <section class="panel training-info-panel" id="program-training">
+          <div class="panel-heading"><div><p class="eyebrow">PROGRAM TRAINING SLEC</p><h2>Program Training</h2></div><span class="week-label">Informasi program</span></div>
+          <article class="training-info-card"><h2>1. NEOP (New Employee Orientation Program)</h2><h3>Membangun Fondasi Kompetensi dan Budaya Kerja Sejak Hari Pertama</h3><p>Program pelatihan awal bagi karyawan baru untuk memahami perusahaan, budaya kerja, keselamatan, dan kompetensi dasar sebelum menjalankan aktivitas operasional.</p><h3>Tujuan Training NEOP</h3><ul><li>Memahami profil, visi, misi, nilai budaya, dan standar kerja perusahaan.</li><li>Membentuk budaya keselamatan (Safety Culture) dan nilai I CARE.</li><li>Memahami sistem delivery, proses bisnis logistik, APD, dan kesehatan kerja.</li><li>Membekali peserta dengan dasar Defensive Driving Training (DDT) dan forklift.</li></ul><h3>Materi Training NEOP</h3><ol><li>Company Profile &amp; Culture</li><li>I CARE Implementation</li><li>System Delivery &amp; Operational Knowledge</li><li>Safety &amp; Health Awareness</li><li>Defensive Driving Training (DDT)</li><li>Forklift Basic Operation</li></ol><p><strong>Durasi:</strong> 3 hari — Hari 1 inclass perusahaan, safety, I CARE dan operasional; Hari 2 DDT dan basic forklift; Hari 3 praktik driving dan forklift.</p></article>
+          <article class="training-info-card"><h2>2. Refresh Training</h2><h3>Meningkatkan Konsistensi Kompetensi dan Kesadaran Keselamatan</h3><p>Pelatihan penyegaran berkala bagi driver dan operator, minimal satu kali dalam setahun, untuk menjaga standar kemampuan, perilaku keselamatan, dan keterampilan operasional.</p><h3>Materi Refresh Training</h3><ul><li>Refresh Defensive Driving: bahaya perjalanan, pengereman, safety distance, speed management, survey jalan, dan evaluasi kecelakaan.</li><li>Refresh Forklift Operation: pemeriksaan unit, handling material, kapasitas angkat, manuver aman, dan pencegahan kecelakaan.</li></ul><p><strong>Durasi:</strong> 1 hari — teori/inclass 3 jam dan praktik lapangan 4 jam.</p></article>
+          <article class="training-info-card"><h2>3. Development Training</h2><h3>Mengembangkan Kompetensi untuk Meningkatkan Kinerja dan Profesionalisme</h3><p>Program pengembangan kompetensi yang disesuaikan dengan kebutuhan organisasi, departemen, individu, dan perkembangan operasional perusahaan.</p><h3>Jenis Development Training</h3><ul><li><strong>Technical Skill:</strong> Defensive Driving Advanced, Forklift Advanced, Vehicle Maintenance, Warehouse Operation, Safety Operation, dan Quality Awareness.</li><li><strong>Safety &amp; Compliance:</strong> Safety Driving, Accident Prevention, Risk Assessment, Emergency Response, dan Workplace Safety.</li><li><strong>Leadership &amp; Soft Skill:</strong> Communication, Problem Solving, Leadership, Coaching &amp; Mentoring, dan Teamwork.</li></ul><p>Pelaksanaan dapat dilakukan melalui internal training SLEC dengan trainer dan fasilitas internal, atau external training bersama lembaga profesional dan trainer bersertifikasi.</p></article>
+          <article class="training-commitment"><h2>Komitmen SLEC</h2><p><strong>“Develop People, Improve Competency, Build Safety Culture”</strong></p><p>SLEC berkomitmen mengembangkan kompetensi melalui metode Knowledge, Skill, dan Attitude (KSA) untuk membangun sumber daya manusia yang kompeten, profesional, berorientasi keselamatan, dan memberikan pelayanan terbaik.</p></article>
+        </section>
+        <section class="panel dedicated-panel certificate-list-panel" id="certificate-list">
+          <div class="panel-heading"><div><p class="eyebrow">MASTER SERTIFIKAT</p><h2>List Karyawan Bersertifikat</h2></div><div class="panel-actions"><span id="certificateCount" class="week-label">0 data</span><button class="text-button" id="addCertificateButton" type="button">Tambah Data +</button><button class="text-button" id="downloadCertificateExcelButton" type="button">Download Excel ↓</button><button class="text-button" id="printCertificateButton" type="button">Download PDF ↓</button></div></div>
+          <form class="certificate-form" id="certificateForm" hidden>
+            <label>Nama<input name="employeeName" type="text" placeholder="Nama lengkap karyawan" required /></label>
+            <label>Jabatan<select name="position" required><option value="">Pilih jabatan</option><option>Driver</option><option>Staff</option></select></label>
+            <label>Sertifikat<select name="certificate" required><option value="">Pilih sertifikat</option><option>SIO Kemnaker</option><option>B3 BNSP</option><option>B3 KEMENHUB</option><option>AK3 Muda</option><option>AK3 Umum</option><option>P3K</option><option>Kelistrikan</option><option>Pengelasan</option><option>Maintenance</option></select></label>
+            <label>Masa Berlaku (tahun)<input name="validityPeriod" type="number" min="1" max="50" step="1" placeholder="Contoh: 3" required /></label>
+            <label>Expired<input name="expiredDate" type="date" min="2025-01-01" max="2040-12-31" required /></label>
+            <label>Others<input name="others" type="text" placeholder="Keterangan tambahan (opsional)" /></label>
+            <button class="primary-button" id="certificateSubmitButton" type="submit">Simpan Data Sertifikat</button>
+          </form>
+          <div class="report-table-wrap">
+            <table class="report-table certificate-table">
+              <thead><tr><th>No</th><th>Nama</th><th>Jabatan</th><th>Sertifikat</th><th>Masa Berlaku</th><th>Expired</th><th>Warning</th><th>Others</th><th>Aksi</th></tr></thead>
+              <tbody id="certificateListBody"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel skill-matrix-panel" id="skill-matrix">
+          <div class="panel-heading"><div><p class="eyebrow">DRIVER DEVELOPMENT</p><h2>Matriks Skill Driver</h2></div><span class="week-label">September 2026</span></div>
+          <p class="matrix-intro">Pantau tingkat kompetensi driver berdasarkan hasil observasi, evaluasi, dan sertifikasi.</p>
+          <div class="matrix-table-wrap">
+            <table class="matrix-table">
+              <thead><tr><th>Nama driver</th><th>Defensive driving</th><th>Forklift</th><th>Safety awareness</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Budi Santoso</strong><small>DR-001</small></td><td><span class="skill-level level-4">4 · Mahir</span></td><td><span class="skill-level level-3">3 · Kompeten</span></td><td><span class="skill-level level-4">4 · Mahir</span></td><td><span class="status-badge status-good">Siap operasi</span></td></tr>
+                <tr><td><strong>Agus Setiawan</strong><small>DR-002</small></td><td><span class="skill-level level-3">3 · Kompeten</span></td><td><span class="skill-level level-2">2 · Berkembang</span></td><td><span class="skill-level level-3">3 · Kompeten</span></td><td><span class="status-badge status-warning">Perlu coaching</span></td></tr>
+                <tr><td><strong>Rizky Pratama</strong><small>DR-003</small></td><td><span class="skill-level level-4">4 · Mahir</span></td><td><span class="skill-level level-4">4 · Mahir</span></td><td><span class="skill-level level-4">4 · Mahir</span></td><td><span class="status-badge status-good">Siap operasi</span></td></tr>
+                <tr><td><strong>Dedi Irawan</strong><small>DR-004</small></td><td><span class="skill-level level-2">2 · Berkembang</span></td><td><span class="skill-level level-1">1 · Pemula</span></td><td><span class="skill-level level-2">2 · Berkembang</span></td><td><span class="status-badge status-warning">Training ulang</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="skill-legend"><span><i class="legend-dot level-1"></i>1 Pemula</span><span><i class="legend-dot level-2"></i>2 Berkembang</span><span><i class="legend-dot level-3"></i>3 Kompeten</span><span><i class="legend-dot level-4"></i>4 Mahir</span></div>
+        </section>
+        <section class="panel driver-form-panel" id="data-driver">
+          <div class="panel-heading"><div><p class="eyebrow">MASTER DATA</p><h2>Data Driver</h2></div><button class="text-button" id="backDashboardButton" type="button">← Kembali ke dashboard</button></div>
+          <form class="driver-form" id="driverForm">
+            <label>No ID<input name="driverId" type="text" placeholder="Contoh: DR-005" required /></label>
+            <label>Nama<input name="driverName" type="text" placeholder="Nama lengkap driver" required /></label>
+            <label>Tanggal Masuk<input name="joinDate" type="date" min="2005-01-01" max="2030-12-31" required /></label>
+            <label>Status Driver<select name="driverStatus" required><option value="">Pilih status</option><option value="Karyawan Tetap">Karyawan Tetap</option><option value="Mitra">Mitra</option></select></label>
+            <fieldset><legend>Nilai Matriks Skill</legend><label>Kemampuan DDT<input name="ddtScore" type="number" min="0" max="4" step="1" placeholder="0 - 4" required /></label><label>Kemampuan Forklift<input name="forkliftScore" type="number" min="0" max="4" step="1" placeholder="0 - 4" required /></label></fieldset>
+            <button class="primary-button" type="submit">Simpan Data Driver</button>
+          </form>
+          <div class="driver-list-heading"><h3>Daftar Driver</h3><div><span id="driverCount">0 data</span><button class="text-button" id="downloadDriverPdfButton" type="button">Download PDF ↓</button></div></div>
+          <div class="report-table-wrap">
+            <table class="report-table driver-table">
+              <thead><tr><th>No ID</th><th>Nama</th><th>Tanggal Masuk</th><th>Lama Bekerja</th><th>Status</th><th>DDT</th><th>Forklift</th><th>Aksi</th></tr></thead>
+              <tbody id="driverTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel dedicated-panel" id="data-trainer">
+          <div class="panel-heading"><div><p class="eyebrow">MASTER DATA</p><h2>Data Trainer</h2></div><button class="text-button back-dashboard-link" type="button">← Kembali ke dashboard</button></div>
+          <p class="matrix-intro">Halaman khusus untuk mengelola data trainer.</p>
+          <div class="empty-page-state">Belum ada data trainer.</div>
+        </section>
+        <section class="panel dedicated-panel attendance-list-panel" id="attendance-list">
+          <div class="panel-heading"><div><p class="eyebrow">ABSENSI DIGITAL</p><h2>List Daftar Training</h2></div><div class="panel-actions"><button class="text-button" id="downloadAttendanceButton" type="button">Download Excel ↓</button><button class="text-button" id="printAttendanceButton" type="button">Cetak / PDF ↓</button></div></div>
+          <p class="matrix-intro">Daftar peserta yang tercatat melalui absensi digital dari landing page.</p>
+          <div class="report-table-wrap">
+            <table class="report-table attendance-list-table">
+              <thead><tr><th>No</th><th>Nama Peserta</th><th>NIK</th><th>Program Training</th><th>Absen</th><th>Waktu</th></tr></thead>
+              <tbody id="attendanceListBody"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel dedicated-panel" id="help">
+          <div class="panel-heading"><div><p class="eyebrow">SUPPORT</p><h2>Pusat Bantuan</h2></div><button class="text-button back-dashboard-link" type="button">← Kembali ke dashboard</button></div>
+          <p class="matrix-intro">Pilih menu di sidebar untuk berpindah halaman. Data yang diinput tersimpan otomatis di browser.</p>
+        </section>
+        <footer><span>© 2024 Forest Enterprise LMS</span><span>Data tersimpan otomatis di browser kamu</span></footer>
+      </main>
+    </div>
+    <dialog class="material-dialog" id="neopDialog" aria-labelledby="neopDialogTitle">
+      <div class="dialog-header">
+        <div><p class="eyebrow">MATERI NEOP TRAINING</p><h2 id="neopDialogTitle">DDT &amp; Forklift 2025</h2></div>
+        <button class="dialog-close" id="closeNeopDialog" type="button" aria-label="Tutup materi">×</button>
+      </div>
+      <p class="dialog-intro">Defensive Driving kendaraan berat dan teknik operasi forklift. Materi dirangkum dari modul SLEC untuk pembelajaran mandiri.</p>
+      <div class="module-list" id="moduleList">
+        <button class="module-summary" data-module="kyt" type="button"><b>01. Target pembelajaran &amp; KYT</b><span>Perubahan mindset, kembali ke prinsip dasar mengemudi, dan identifikasi bahaya.</span><i>→</i></button>
+        <button class="module-summary" data-module="k3" type="button"><b>02. Pengendalian risiko K3</b><span>Hirarki pengendalian risiko dari eliminasi hingga alat pelindung diri.</span><i>→</i></button>
+        <button class="module-summary" data-module="awareness" type="button"><b>03. Safety awareness &amp; penyebab kecelakaan</b><span>Kenali bahaya, prediksi risiko, dan lakukan pencegahan.</span><i>→</i></button>
+        <button class="module-summary" data-module="inspection" type="button"><b>04. Pemeriksaan kendaraan &amp; troubleshooting</b><span>Pre-trip, in-trip, post-trip inspection, dan penanganan gangguan kendaraan.</span><i>→</i></button>
+        <button class="module-summary" data-module="microsleep" type="button"><b>05. Microsleep &amp; gangguan internal</b><span>Kenali tanda kelelahan dan tindakan aman sebelum mengemudi.</span><i>→</i></button>
+        <button class="module-summary" data-module="defensive" type="button"><b>06. Defensive driving</b><span>Lima kunci defensive driving dan prinsip 4A.</span><i>→</i></button>
+        <button class="module-summary" data-module="economical" type="button"><b>07. Economical driving</b><span>Teknik berkendara hemat BBM, biaya perawatan, dan emisi.</span><i>→</i></button>
+        <button class="module-summary" data-module="braking" type="button"><b>08. Teknik pengereman &amp; transmisi</b><span>Threshold braking, engine brake, service brake, dan pemilihan gigi.</span><i>→</i></button>
+        <button class="module-summary" data-module="signs" type="button"><b>09. Rambu, marka &amp; manuver</b><span>Dasar hukum, rambu, marka, blind spot, dan menjaga jarak.</span><i>→</i></button>
+        <button class="module-summary" data-module="forklift" type="button"><b>10. Teknik operasi forklift</b><span>Pre-operation, handling, loading, unloading, dan stacking.</span><i>→</i></button>
+        <button class="module-summary" data-module="loading" type="button"><b>11. Loading pattern pada truck</b><span>Penyusunan muatan seimbang dan aman sesuai kapasitas kendaraan.</span><i>→</i></button>
+      </div>
+      <article class="module-detail" id="moduleDetail" hidden><button class="back-to-modules" id="backToModules" type="button">← Kembali ke ringkasan</button><h3 id="moduleDetailTitle"></h3><div id="moduleDetailContent"></div></article>
+      <div class="dialog-footer">Sumber: DDT &amp; FORKLIFT 2025 (SLEC) · 24 halaman</div>
+    </dialog>
+    <dialog class="material-dialog" id="refreshDialog" aria-labelledby="refreshDialogTitle">
+      <div class="dialog-header">
+        <div><p class="eyebrow">MATERI REFRESH TRAINING</p><h2 id="refreshDialogTitle">Penyegaran Kompetensi &amp; Keselamatan Kerja</h2></div>
+        <button class="dialog-close" id="closeRefreshDialog" type="button" aria-label="Tutup materi">×</button>
+      </div>
+      <p class="dialog-intro">Materi penyegaran berkala untuk menjaga standar kemampuan, perilaku keselamatan, dan keterampilan operasional driver serta operator.</p>
+      <div class="module-list">
+        <article class="module-summary refresh-module"><b>01. Refresh Defensive Driving</b><span>Bahaya perjalanan, pengereman, safety distance, speed management, survey jalan, dan evaluasi kecelakaan.</span></article>
+        <article class="module-summary refresh-module"><b>02. Manajemen Risiko Perjalanan</b><span>Identifikasi kondisi kendaraan, jalan, cuaca, muatan, dan lingkungan sebelum perjalanan dimulai.</span></article>
+        <article class="module-summary refresh-module"><b>03. Refresh Forklift Operation</b><span>Pemeriksaan unit, kapasitas angkat, handling material, manuver aman, dan pencegahan kecelakaan.</span></article>
+        <article class="module-summary refresh-module"><b>04. Praktik Lapangan &amp; Evaluasi</b><span>Praktik teknik berkendara dan operasi unit, diikuti evaluasi pemahaman serta observasi perilaku aman.</span></article>
+        <article class="module-summary refresh-module"><b>05. Refresh Training Safety - Defensive - Eco Driving</b><span>Penyegaran keselamatan berkendara, defensive driving, dan economical driving untuk meningkatkan kontrol risiko serta efisiensi operasional.</span></article>
+        <article class="module-summary refresh-module"><b>06. Refresh Training Operasional Forklift</b><span>Penyegaran pemeriksaan forklift, kapasitas angkat, handling material, manuver, loading, unloading, dan stacking secara aman.</span></article>
+        <article class="module-summary refresh-module"><b>07. Refresh Peraturan Operasional</b><span>Pemahaman dan penguatan kepatuhan terhadap peraturan, prosedur kerja, standar keselamatan, dan ketentuan operasional.</span></article>
+      </div>
+      <div class="dialog-footer">Durasi: 1 hari · Teori/inclass 3 jam · Praktik lapangan 4 jam</div>
+    </dialog>
+    <dialog class="material-dialog" id="incidentalDialog" aria-labelledby="incidentalDialogTitle">
+      <div class="dialog-header">
+        <div><p class="eyebrow">MATERI INCIDENTAL TRAINING</p><h2 id="incidentalDialogTitle">KYT: Kiken Yochi Training</h2></div>
+        <button class="dialog-close" id="closeIncidentalDialog" type="button" aria-label="Tutup materi">×</button>
+      </div>
+      <p class="dialog-intro">Pelatihan menduga bahaya untuk meningkatkan kepedulian terhadap kondisi abnormal, mengenali risiko, dan mencegah kecelakaan kerja.</p>
+      <div class="module-list">
+        <article class="module-summary incidental-module"><b>01. Latar belakang &amp; tujuan KYT</b><span>Mencegah incident atau accident akibat kurang peduli terhadap kondisi abnormal dan bahaya. Peserta belajar mengenali bahaya serta berpartisipasi aktif dalam pencegahan kecelakaan.</span></article>
+        <article class="module-summary incidental-module"><b>02. Konsep dasar K3</b><span>Keselamatan kerja melindungi tenaga kerja dari kecelakaan dan penyakit akibat kerja, meningkatkan produktivitas, serta menciptakan lingkungan kerja yang aman dan nyaman. Tanggung jawab keselamatan ada pada perusahaan dan setiap individu.</span></article>
+        <article class="module-summary incidental-module"><b>03. Bahaya, risiko &amp; pengendalian</b><span>Bahaya adalah sumber yang berpotensi menimbulkan kecelakaan. Kendalikan dengan hirarki: eliminasi, substitusi, isolasi atau rekayasa, administrasi, lalu APD. Risiko merupakan kombinasi kemungkinan kejadian dan tingkat keparahan dampaknya.</span></article>
+        <article class="module-summary incidental-module"><b>04. Identifikasi bahaya</b><span>Kenali bahaya dengan melihat, mendengar, merasakan, serta menyentuh atau mencoba menggunakan perantara. Ajukan pertanyaan: apa, di mana, kapan, siapa, dan bagaimana.</span></article>
+        <article class="module-summary incidental-module"><b>05. Kondisi normal &amp; abnormal</b><span>Kondisi normal mengikuti urutan kerja sesuai standar. Kondisi abnormal adalah proses yang menyimpang dari SOP, tidak biasa, membahayakan, atau menimbulkan keraguan.</span></article>
+        <article class="module-summary incidental-module"><b>06. STOP - CALL - WAIT</b><span>STOP: hentikan pekerjaan, cari tempat aman, matikan mesin, dan pasang tanda darurat. CALL: hubungi atasan atau monitoring dan informasikan detail kejadian. WAIT: jangan berinisiatif sendiri dan tunggu instruksi.</span></article>
+        <article class="module-summary incidental-module"><b>07. STOP6: enam tipe kecelakaan</b><span>A Apparatus/Actuator atau terjepit mesin; B Big Heavy atau tertimpa benda berat; C Car atau kecelakaan transportasi; D Drop atau jatuh dari ketinggian; E Electrical atau tersengat listrik; F Fire atau terkena panas dan kebakaran.</span></article>
+        <article class="module-summary incidental-module"><b>08. Contoh bahaya operasional</b><span>Bahaya dapat berupa terjepit pintu atau mesin, tertimpa muatan forklift atau crane, tertabrak kendaraan atau forklift, jatuh dari tangga atau truck, tersengat listrik, serta terbakar atau terkena benda panas.</span></article>
+        <article class="module-summary incidental-module"><b>09. Rounde KYT: mencari masalah &amp; pencegahan</b><span>Bentuk kelompok 4-7 orang dengan tema sesuai kondisi aktual. Round 1 memahami masalah dan menganalisis bahaya; Round 2 memilih masalah paling mungkin; Round 3 menyusun countermeasure; Round 4 memilih tindakan terbaik dan membuat ikrar atau One Point.</span></article>
+        <article class="module-summary incidental-module"><b>10. Contoh studi kasus bongkar muat</b><span>Perhatikan posisi pekerja di antara truck dan forklift, tumpukan barang, penggunaan helm, posisi forklift di kemiringan, dan kondisi rem parkir. Countermeasure harus mencegah forklift bergerak atau muatan jatuh.</span></article>
+      </div>
+      <div class="dialog-footer">Sumber: Materi KYT (Kiken Yochi Training) · 37 halaman</div>
+    </dialog>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js?v=20260910-refresh-material"></script>
+  </body>
+</html>

@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#c0cab6","primary-fixed":"#a0f882","on-tertiary-fixed-variant":"#52452b","surface-dim":"#d3daef","on-tertiary-fixed":"#241a05","background":"#f9f9ff","surface-container-highest":"#dce2f7","on-surface":"#141b2b","surface":"#f9f9ff","surface-variant":"#dce2f7","inverse-on-surface":"#edf0ff","error":"#ba1a1a","on-primary-container":"#c1ffa8","primary":"#156100","on-secondary-fixed":"#052100","inverse-surface":"#293040","on-secondary":"#ffffff","on-background":"#141b2b","on-surface-variant":"#40493b","surface-bright":"#f9f9ff","on-primary-fixed-variant":"#115300","surface-container":"#e9edff","secondary-fixed-dim":"#8bda6a","surface-tint":"#196d00","tertiary-container":"#7a6a4d","tertiary":"#605237","tertiary-fixed":"#f5e0bc","on-primary-fixed":"#032100","on-tertiary-container":"#ffeccd","on-primary":"#ffffff","on-secondary-container":"#29730c","surface-container-high":"#e1e8fd","inverse-primary":"#85db69","secondary-fixed":"#a5f783","tertiary-fixed-dim":"#d8c4a2","secondary":"#226d03","on-secondary-fixed-variant":"#165200","on-tertiary":"#ffffff","primary-container":"#2a7c13","error-container":"#ffdad6","on-error":"#ffffff","surface-container-low":"#f1f3ff","secondary-container":"#a5f783","surface-container-lowest":"#ffffff","on-error-container":"#93000a","outline":"#707a69","primary-fixed-dim":"#85db69"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-2xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-2xs":"0.25rem","space-3xl":"3rem","space-xl":"2rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-xs":"0.5rem","container-max":"1440px"},fontFamily:{"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"headline-lg":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"display-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"display-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-space-md px-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm px-space-xs py-space-2xs"><img alt="SLEC System Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrEyZVRa-9R5UnFQPMIXgQaiLyLSQAzJOlf5cl6UfZ4RQZK_sQiPW26na23x2_3oca0tt0glMvvHz1NShCz7zmHOclngifFqxvzEuWpckI4fRjbYqP865Brm1tTEGYjiAKTXNfN_qyIfoiXOrmStw3L7o9kZDi-s3OInFZKjdapp8j-9WwHFi6sCE5EdD078KuGVCYH8mGwzSyp1-_pE5P2HsqZ6G2D8lB6UOuamL8lrTZ5Hw3gMhNkA"/><div class="flex flex-col"><span class="font-label-lg text-label-lg text-on-surface">SLEC System</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Enterprise Training</span></div></div><div class="h-px w-full bg-surface-container-highest"></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg transition-colors bg-primary-container text-on-primary font-bold" data-path="training-management" href="#"><span class="material-symbols-outlined text-[20px]">model_training</span><span class="font-body-md text-body-md">Training Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="participant-database" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Participant Database</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="assessment" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-body-md text-body-md">Assessment</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="certificate" href="#"><span class="material-symbols-outlined text-[20px]">workspace_premium</span><span class="font-body-md text-body-md">Certificate</span></a></nav></div><div class="flex flex-col gap-space-sm"><div class="bg-surface-container p-space-sm rounded-xl flex flex-col gap-space-2xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">System Status</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Supabase Cloud Connected</span></div><div class="h-px w-full bg-surface-container-highest"></div><div class="flex items-center gap-space-sm px-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary border-2 border-surface-container-low"></span></div><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface truncate">Administrator</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">SLEC Learning Center</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><img alt="SLEC System Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrEyZVRa-9R5UnFQPMIXgQaiLyLSQAzJOlf5cl6UfZ4RQZK_sQiPW26na23x2_3oca0tt0glMvvHz1NShCz7zmHOclngifFqxvzEuWpckI4fRjbYqP865Brm1tTEGYjiAKTXNfN_qyIfoiXOrmStw3L7o9kZDi-s3OInFZKjdapp8j-9WwHFi6sCE5EdD078KuGVCYH8mGwzSyp1-_pE5P2HsqZ6G2D8lB6UOuamL8lrTZ5Hw3gMhNkA"/><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="hover:text-on-surface cursor-pointer">TMS</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-on-surface font-label-md text-label-md">Enterprise Workspace</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center w-72"><span class="material-symbols-outlined absolute left-space-xs text-on-surface-variant text-[20px]">search</span><input class="w-full pl-9 pr-space-sm py-space-2xs bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search participant, batch, syllabus..." type="search"/></div><div class="flex items-center gap-space-xs"><div class="inline-flex items-center gap-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-sm text-label-sm text-on-surface hidden xl:inline">Supabase Active</span></div><button class="relative p-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVrsK5Yo7N5bXd5XzeDYmwizg_8yCLhLH1zHBYTXpYogxZ5sbIjcTSepBs5-y2V6T9USYH209QI-bbS6Gf4lPwsTR9WecJb3bbykldhu2HUgK5LXGpLGPrLSdfyU1Z3G2FMmlZdXAm3Q2GVcETjpFX_xbeIoy5S5vHL0UoeBulrEhHaOb9wQ3kYVTI9ThPX6ty-CL0bVeEyIf_v82vpDRsVk4OMRqk8Jg_u8pgRPupkbr7ge1mJr6csQ"/><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">System Admin</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">SLEC Learning Center</span></div></div></div></header><main class="w-full pt-16 px-space-xl bg-background"><div class="flex flex-col w-full pb-space-3xl gap-space-xl">
+<!-- Top Command & Action Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Catalog &amp; Orchestration</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Q2 Academic Year 2025</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Training Management &amp; Curriculum</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">Manage enterprise curricula, monitor active cohorts, allocate certified instructors, and synchronize hybrid learning batches with Supabase cloud backend.</p>
+</div>
+<!-- Quick Stats Metric Pills & Create Trigger -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</div>
+<div class="flex flex-col pr-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Active Cohorts</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">14 <span class="text-primary text-label-md font-semibold font-label-md">/ 18</span></span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-xl shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">group</span>
+</div>
+<div class="flex flex-col pr-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Total Learners</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">392</span>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg shadow-sm transition-all duration-150 active:scale-95 cursor-pointer" id="btnCreateProgram">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Create Training Program</span>
+</button>
+</div>
+</div>
+<!-- Filter & Segmented Tabs Bar -->
+<div class="flex flex-col gap-space-md bg-surface-container-low p-space-sm rounded-xl shadow-sm">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-sm">
+<!-- Segmented Navigation Pill -->
+<div class="inline-flex p-1 bg-surface-container rounded-xl self-start">
+<button class="nav-tab active-tab px-space-md py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-bold flex items-center gap-space-2xs cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Active Programs</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold">14</span>
+</button>
+<button class="nav-tab px-space-md py-space-2xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-2xs cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Batch Schedules</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-[10px] font-semibold">26</span>
+</button>
+<button class="nav-tab px-space-md py-space-2xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-2xs cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span>Curriculum &amp; Syllabus</span>
+</button>
+<button class="nav-tab px-space-md py-space-2xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-2xs cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Trainer Allocation</span>
+</button>
+</div>
+<!-- Live Search & Filtering Controls -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="relative flex items-center min-w-[240px] flex-1 sm:flex-initial">
+<span class="material-symbols-outlined absolute left-space-xs text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-8 pr-space-sm py-space-2xs bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-outline-variant" id="tableSearch" placeholder="Search by title, code or trainer..." type="text"/>
+</div>
+<!-- Category Dropdown Filter -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-lowest pl-space-sm pr-space-xl py-space-2xs rounded-lg font-label-md text-label-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="categoryFilter">
+<option value="all">Category: All</option>
+<option value="Technical">Technical</option>
+<option value="Leadership">Leadership</option>
+<option value="Compliance">Compliance</option>
+<option value="Soft Skills">Soft Skills</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-xs top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Status Filter -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-lowest pl-space-sm pr-space-xl py-space-2xs rounded-lg font-label-md text-label-md text-on-surface shadow-sm focus:outline-none focus:ring-2 focus:ring-primary cursor-pointer" id="statusFilter">
+<option value="all">Status: All Status</option>
+<option value="In Progress">Active / In Progress</option>
+<option value="Scheduled">Scheduled</option>
+<option value="Draft">Draft</option>
+<option value="Completed">Completed</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-xs top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">tune</span>
+</div>
+<button class="p-space-2xs rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant shadow-sm transition-colors cursor-pointer" title="Reset Filters">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Workspace: 12-Column Grid Split (Data Table 8-Cols / Live Inspector Panel 4-Cols) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Core: Data Table & Interactive Catalog (8 Columns) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Operational Summary Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm relative overflow-hidden">
+<div class="flex items-center gap-space-sm z-10">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Curriculum Catalog &amp; Batches</span>
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-bold">14 Live</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing synchronized programs synced with Learning Management Supabase instance</span>
+</div>
+</div>
+<div class="flex items-center gap-space-2xs z-10">
+<button class="px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors flex items-center gap-1 cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Batch Export</span>
+</button>
+<button class="px-space-sm py-space-2xs rounded-lg font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors flex items-center gap-1 cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">view_column</span>
+<span>Display Fields</span>
+</button>
+</div>
+<!-- Decorative Ambient Vector -->
+<div class="absolute right-0 top-0 bottom-0 w-48 bg-gradient-to-l from-primary/5 to-transparent pointer-events-none"></div>
+</div>
+<!-- Dense Enterprise Data Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md font-bold">Program Code</th>
+<th class="py-space-sm px-space-md font-bold">Training Title &amp; Modules</th>
+<th class="py-space-sm px-space-sm font-bold">Category</th>
+<th class="py-space-sm px-space-sm font-bold">Assigned Trainer</th>
+<th class="py-space-sm px-space-sm font-bold min-w-[130px]">Enrollment Quota</th>
+<th class="py-space-sm px-space-sm font-bold">Schedule</th>
+<th class="py-space-sm px-space-sm font-bold">Delivery</th>
+<th class="py-space-sm px-space-sm font-bold">Status</th>
+<th class="py-space-sm px-space-sm text-right font-bold pr-space-md">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm" id="programsTableBody">
+<!-- Row 1 (Selected by default) -->
+<tr class="cursor-pointer transition-colors bg-surface-container-low hover:bg-surface-container group" data-program-id="PROG-2025-081" onclick="selectProgram('PROG-2025-081')">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md font-bold text-primary">TRN-081</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">Fullstack Web App Development with Supabase &amp; Node.js</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span> 3 Core Modules • 48 Hours Total
+                    </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-semibold inline-block">
+                    Technical
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Professional headshot of Dr. Irfan Pratama, a Southeast Asian male enterprise software architect wearing modern glasses and navy formal blazer with warm soft background lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO5aU4Kq2zzm1wzxDEsLiFr7o07Zqy9D1wpKBlMVK-r1XMiw8T-lxvobZ03w3umHqgWjJ6OLI8JnpFkICXdTYdVrlaDglP5KNBdkb26ETIwhvX4u6X5fXJMeHNqHhN4F3qIiYxVQFyYvOjMu3XXHgTjPw23ZagGSzMZIfbarNT8xNFgq3UeQgl9ouVijJgcTcgJ_hSHJ-MwOmVvnNgpmMsOHjhzDO0ZHCToQ27xrkdV0zniMxEw4PJgA"/>
+<span class="font-label-md text-label-md text-on-surface truncate max-w-[110px]">Dr. Irfan P.</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">28 / 30</span>
+<span class="text-primary font-bold">92%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-label-sm text-label-sm text-on-surface">
+<span class="font-semibold">14 - 28 Mei 2025</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Batch 04 (Morning)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary/10 text-primary font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">sensors</span> Hybrid
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> In Progress
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm text-right pr-space-md">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Inspect Syllabus">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Edit Batch">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="cursor-pointer transition-colors hover:bg-surface-container group" data-program-id="PROG-2025-082" onclick="selectProgram('PROG-2025-082')">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">TRN-082</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">Enterprise Strategic Leadership &amp; Operational Governance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span> 5 Core Modules • 32 Hours Total
+                    </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-semibold inline-block">
+                    Leadership
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Executive corporate portrait of Rina Setyowati, Southeast Asian female leadership consultant wearing emerald green professional attire with natural daylight studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPcfcFIPaJeTLx4e9t2tLuO1fTzpwc2iy7AfVEXf0DZIWmVv6nvTPWqbxmWNwu5oc22YWP7YbqSwNAj64Eu4FXBbGWPyg9zoSDeylQRcVnWP4qLjPywgC_xZ-RkyPJJZicwu-Gf9bgYDbuYqE15vFGM6o-vPwkS8dKFIBey_wxv9Q0w6RxIn1PDW4ZF5_dflLtPNWy9NswWYm-JPKtc63KTUtjUwt3SND0uA6uQjVKHGX118Vaxs2ilA"/>
+<span class="font-label-md text-label-md text-on-surface truncate max-w-[110px]">Rina Setyowati</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">22 / 25</span>
+<span class="text-secondary font-bold">88%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-label-sm text-label-sm text-on-surface">
+<span class="font-semibold">01 - 10 Juni 2025</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Cohort A (Intensive)</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">meeting_room</span> In-Person
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Scheduled
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm text-right pr-space-md">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Inspect Syllabus">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Edit Batch">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="cursor-pointer transition-colors hover:bg-surface-container group" data-program-id="PROG-2025-083" onclick="selectProgram('PROG-2025-083')">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">TRN-083</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">ISO 27001 Data Privacy &amp; InfoSec Compliance Audit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span> 4 Core Modules • 24 Hours Total
+                    </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-semibold inline-block">
+                    Compliance
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Corporate professional portrait of Budi Hartono, Senior Cyber Security and ISO Auditor, middle-aged Indonesian male in formal suit against clean architectural background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ73WQqJOmwY2Nd5IEjBN3RKh26sRlcCXlC9WKbY32TC5gdWPXJerSVZYph2XWd8wXga5iF5Kefqez52YMK35B6EH-dfmvUD_w67MuDeDs1TJtIg7oiuud9BiestQEcpc0rbexSUpLFktsGkkfrQl2XRXvSvZ-P9GvBCDFV0rm5_dIPxQrOPGy6Dc85YiSywvQ00eIeoXNzx4jbpyXDhzbS3pe3M-haTdb61TVci33nUnXvcM0xgzFTA"/>
+<span class="font-label-md text-label-md text-on-surface truncate max-w-[110px]">Budi Hartono</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">30 / 30</span>
+<span class="text-primary font-bold">100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-label-sm text-label-sm text-on-surface">
+<span class="font-semibold">05 - 19 Mei 2025</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Online Cohort 02</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">desktop_windows</span> Online Classroom
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> In Progress
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm text-right pr-space-md">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Inspect Syllabus">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Edit Batch">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="cursor-pointer transition-colors hover:bg-surface-container group" data-program-id="PROG-2025-084" onclick="selectProgram('PROG-2025-084')">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">TRN-084</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">High-Impact Corporate Communication &amp; Negotiation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span> 3 Core Modules • 16 Hours Total
+                    </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-semibold inline-block">
+                    Soft Skills
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Sarah Wijaya, senior organizational psychologist and keynote executive communication trainer, smiling warmly in a bright modern boardroom." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfxV59kEOpWk5y9yTGhzcTCFmHkd2UJPRpmdw4MOI3dS4d88om0N9bSieKyN_iU76s3SlIlXd9IfrGL-9RkrVFv_3AehSD2ObOOlp_QS-7psU39OeIq89SJJ2sRvroIhnqkTvvDYUQBfpNsSdVEmjkX7wrZ7wuAtEiKj5790UClp5jPz3J0jX316_qyiy8Y0HnrNO47kdxUwSZwTHisPExC_klXkfGvGoRRg-TgicF89hAiwf2QjZ2jQ"/>
+<span class="font-label-md text-label-md text-on-surface truncate max-w-[110px]">Sarah Wijaya</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">15 / 20</span>
+<span class="text-on-surface-variant font-bold">75%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary/70 h-full rounded-full" style="width: 75%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-label-sm text-label-sm text-on-surface">
+<span class="font-semibold">20 - 24 Juni 2025</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Weekend Executive</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary/10 text-primary font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">sensors</span> Hybrid
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Scheduled
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm text-right pr-space-md">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Inspect Syllabus">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Edit Batch">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="cursor-pointer transition-colors hover:bg-surface-container group" data-program-id="PROG-2025-085" onclick="selectProgram('PROG-2025-085')">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">TRN-085</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors line-clamp-1">DevOps Pipeline Automation &amp; Kubernetes Orchestration</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span> 6 Core Modules • 40 Hours Total
+                    </span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-semibold inline-block">
+                    Technical
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Kevin Tan, senior DevOps practitioner and infrastructure engineer, wearing glasses in front of server rack equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnpb8Lvlo3z67pPPSxqiLl9CGB0gIkIMbmAwaglW7BpKiQc2v2pDbi1FXVtnk1N5vuLk4CGNK6KoDbQSt0CPDDZEEYSGCLisHeOXBjECcCLElpN1753YEf4fNUg29gAG8a7z_G489zCGIJURmKPXbkxyp5krNQSftQ_ZLSFcE71oAhxNNxDRAXwhpGDiQCU3uo-pcysfDYOZc5RADhhwBDJu0y2idaJxh4Tl8iXHYEVh7a0VuGTdntTw"/>
+<span class="font-label-md text-label-md text-on-surface truncate max-w-[110px]">Kevin Tan</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">0 / 25</span>
+<span class="text-on-surface-variant font-bold">0%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-outline-variant h-full rounded-full" style="width: 0%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<div class="flex flex-col font-label-sm text-label-sm text-on-surface">
+<span class="font-semibold">10 - 25 Juli 2025</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Draft Batch</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">desktop_windows</span> Online Classroom
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Draft
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm text-right pr-space-md">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Inspect Syllabus">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary rounded hover:bg-surface-container-highest transition-colors" title="Edit Batch">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="px-space-md py-space-sm bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<span>Rows per page:</span>
+<select class="bg-surface-container-lowest text-on-surface rounded px-2 py-1 font-label-sm text-label-sm focus:outline-none">
+<option>5</option>
+<option selected="">10</option>
+<option>25</option>
+</select>
+<span>Showing 1 to 5 of 14 programs</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface disabled:opacity-40 cursor-pointer" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-6 h-6 rounded bg-primary text-on-primary font-bold text-center flex items-center justify-center">1</button>
+<button class="w-6 h-6 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-semibold text-center flex items-center justify-center">2</button>
+<button class="w-6 h-6 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-semibold text-center flex items-center justify-center">3</button>
+<button class="p-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface cursor-pointer">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Batch Scheduling Calendar Ribbon -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">event_repeat</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Upcoming Delivery Milestones (Next 7 Days)</h3>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline flex items-center gap-1" href="#">
+<span>View Full Timeline</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Timeline Card 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">Tomorrow, 09:00 WIB</span>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary text-[11px] font-bold">Live Room 102</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface line-clamp-1">TRN-081: Module 2 RESTful Sync</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Trainer: Dr. Irfan Pratama • 28 Confirmed</span>
+</div>
+<!-- Timeline Card 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Thursday, 13:30 WIB</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container text-[11px] font-bold">Zoom Pro</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface line-clamp-1">TRN-083: Infosec Policy Check</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Trainer: Budi Hartono • 30 Confirmed</span>
+</div>
+<!-- Timeline Card 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Saturday, 10:00 WIB</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold text-[11px]">Auditorium A</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface line-clamp-1">TRN-082: Executive Assessment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Trainer: Rina Setyowati • 22 Confirmed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Core: Detailed Preview Inspector Panel (4 Columns) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md sticky top-20">
+<!-- Preview Inspector Main Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Header Banner & Cover Accent -->
+<div class="relative h-32 bg-primary flex flex-col justify-end p-space-md overflow-hidden">
+<div class="absolute inset-0 opacity-20 mix-blend-overlay">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path class="text-surface-container-lowest" d="M0 0 C 40 80, 70 20, 100 100 L 0 100 Z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="relative z-10 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold shadow-sm">
+              Batch 04 • Live In Progress
+            </span>
+<span class="font-label-sm text-label-sm text-on-primary font-mono tracking-wider">TRN-081-SUPA</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Title & Badges -->
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-semibold">Technical Curriculum</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary/10 text-primary font-bold">Hybrid Mode</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-tight font-bold mt-1" id="inspectorTitle">
+              Fullstack Web App Development with Supabase &amp; Node.js
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Enterprise certification track covering relational database schema governance, row-level security (RLS), high-throughput Node.js microservices, and continuous deployment.
+            </p>
+</div>
+<!-- Quota Gauge Progress Bar -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">analytics</span> Cohort Fill Rate
+              </span>
+<span class="font-label-md text-label-md text-primary font-bold">28 / 30 seats (92%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 92%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Only 2 waitlist seats open</span>
+<span class="text-secondary font-semibold">Min Quota Met (15)</span>
+</div>
+</div>
+<!-- Assigned Instructor Module -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Dr. Irfan Pratama, smiling technology trainer wearing dark glasses and light blue collar shirt, professional education studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaIXtuTZw9-N5hI-v1ilFyxb-kFcEZf7-9vm0okztvLdzcvBCWqz4pz3u4XulVdoU4mK9iRSAOOsA56h9GBDiu-U3tm2j7svWK-tTCWNL6pSgwmQgID0cRokwmdDXLC3RuPwjfdde8HsECKnQ6Xd9gDzQ941Fh2S_d0mab7f_AzF4dE5bemuF-6QJZvsyGl5MiDPIkW3XJR6GuEW20H4chEq3M3w7rAWyPXWMQ-VWe5z1A08vzlp0Hpg"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Principal Instructor</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Dr. Irfan Pratama, M.Kom</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lead Solutions Architect • SLEC Faculty</span>
+</div>
+</div>
+<button class="p-space-2xs text-primary hover:bg-primary/10 rounded-lg transition-colors cursor-pointer" title="Direct Message Trainer">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</button>
+</div>
+<!-- Syllabus Milestones Step by Step -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Curriculum Milestones</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">3 Modules (100% Validated)</span>
+</div>
+<div class="flex flex-col gap-space-2xs mt-1">
+<!-- Module 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col w-full min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Module 1: Database Architecture</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-secondary-container text-on-secondary-container font-bold shrink-0">Passed</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">PostgreSQL schemas, Supabase Row-Level Security (RLS) policies, replication streams.</span>
+<div class="flex items-center gap-space-sm mt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 16 Hours</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">fact_check</span> 4 Quizzes</span>
+</div>
+</div>
+</div>
+<!-- Module 2 (Active) -->
+<div class="p-space-sm rounded-xl bg-primary/10 flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+<span class="font-label-sm text-label-sm font-bold">02</span>
+</div>
+<div class="flex flex-col w-full min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold truncate">Module 2: RESTful API Node.js</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-primary text-on-primary font-bold shrink-0 animate-pulse">In Progress</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface mt-0.5">Fastify backend integration, JWT Auth handling, database connection pool tuning.</span>
+<div class="flex items-center gap-space-sm mt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary font-semibold"><span class="material-symbols-outlined text-[14px]">sensors</span> Live Session</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 18 Hours</span>
+</div>
+</div>
+</div>
+<!-- Module 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-start gap-space-sm opacity-80">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="font-label-sm text-label-sm font-bold">03</span>
+</div>
+<div class="flex flex-col w-full min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Module 3: Vercel CI/CD &amp; Testing</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-surface-container-highest text-on-surface-variant font-semibold shrink-0">Upcoming</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Automated integration testing, edge staging pipelines, final capstone project defense.</span>
+<div class="flex items-center gap-space-sm mt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 14 Hours</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">verified</span> Capstone</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Schedule & Logistics Summary -->
+<div class="grid grid-cols-2 gap-space-xs p-space-sm rounded-xl bg-surface-container-low font-body-sm text-body-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Start - End</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">14 May - 28 May 2025</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Attendance Rate</span>
+<span class="font-label-md text-label-md text-primary font-bold">96.4% Verified</span>
+</div>
+</div>
+<!-- Quick Action CTAs -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-space-sm px-space-md bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg shadow-md flex items-center justify-center gap-space-xs transition-all cursor-pointer" id="btnLaunchClassroom">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+<span>Launch Virtual Classroom</span>
+</button>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="py-space-2xs px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors cursor-pointer" id="btnExportCsv">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export CSV</span>
+</button>
+<button class="py-space-2xs px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+<span>Settings</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Trainer Availability Snippet Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Instructor Roster</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">8 Available Now</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Qualified internal enterprise trainers ready for batch assignment.</p>
+<div class="flex items-center gap-space-2xs mt-2 overflow-x-auto py-1">
+<img class="w-9 h-9 rounded-full object-cover ring-2 ring-primary" data-alt="Portrait of senior corporate trainer Ahmad Fauzi in smart business outfit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSh-GIUsSJ0T12DHUd5Tmd8oZXvFz3G1baiam1oyrmTnrmUC6nr_RU25r_ujZ6CoF0UH5AtlL5CP8dECTSX0gyztZAwCLEgQRgFpZh4gXlLt61kjAEK1jFI_s81AWTyNybq4cT07nbLRPv_4Ct7q9ZWCeQ2UzjrruaLO1-o6fmTrqoHQl9it0XNwAhixG6durSijjjqmEVzP4qulgsKJFuHp-p53E4zWIX4pUSsJ5G91Ndsf0ZWteDBA" title="Ahmad Fauzi (Soft Skills)"/>
+<img class="w-9 h-9 rounded-full object-cover ring-2 ring-primary" data-alt="Portrait of compliance educator Maya Anindita with warm approachable smile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtNUPQSBRqBIs_ya4ocPiFkMGSwQctSwVAnedh_SDMxLADJcszwbinBunrPHDmSbQr23W47w4Oi4knbvTzQNLHRQwy9SRgykOzl-c2i2V3Hzsx-nU-ayiiaCDrLFkQGtd5Qvy3UBT1H55zX3u3Ic1b0jqetmyLI2sVaWGDhIprb9qheSjAo0vQZYNYotGcqwPIzwRr9InsKdjgwxPXsOl4lvNPAI7QlftK2HF7Laa6wiwrq0Le4d_dfQ" title="Maya Anindita (Compliance)"/>
+<img class="w-9 h-9 rounded-full object-cover ring-2 ring-primary" data-alt="Portrait of technology lead Daniel Prasetyo in modern IT office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7pM0z18WmmyhlunZlPBfkllfX1NqQm2-9fnBGJkVLXMUYHJLTnuY6hoMP3pT1tHCnzQStu3Ypcpb7WunroNJ9u3vh0WvXlZn_iHuJuPMouDbSnKg1ZpDOlmBfwjZjHNEszRb5gVSfaHgoRGPN4f7Qz1icHEY2nKKFse-HQJDSdTyioaK9qkz1ZECFTRhkC6GV0xkrA4x5URbHo9Wqt74iFHIPQ4cEyscG4TeskLxpW4CThhjnPXdCNA" title="Daniel Prasetyo (Cloud &amp; AI)"/>
+<img class="w-9 h-9 rounded-full object-cover ring-2 ring-primary" data-alt="Portrait of leadership coach Dewi Lestari with glasses in executive room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWVHabpauOpg-TZS_q3O_fxX-IptT-pBGjDWq4q6F9AiZe1QCjoeAWVcd2SLpuJnuWCOfFymRrk0fYN7zJU-aBXMfPYg_Mi5Y6_FTVU9Jokm-OO6Y9Vl1GlvWNjUWbtdeaK_o0mRITFYySWe1NjAdoHkd6uhYRN7grhXur74OEaVKF8rCpdPYLbdBkVL9vmXyBOjgKiOyvw6c8PZ2lMYTG4O2uUK5z_JgLB8TOpnrWJgirakhyU0s5zA" title="Dewi Lestari (Leadership)"/>
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant font-label-sm text-label-sm font-bold cursor-pointer hover:bg-surface-container-high">
+            +4
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Backdrop: Create Training Program Flow (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm flex items-center justify-center p-space-md hidden" id="createProgramModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-2xl overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Create New Training Program</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Initialize syllabus architecture and batch allocation</span>
+</div>
+</div>
+<button class="p-space-2xs text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer" id="btnCloseModal">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Modal Body Form -->
+<div class="p-space-lg flex flex-col gap-space-md overflow-y-auto max-h-[70vh]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="md:col-span-2 flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Program Title</label>
+<input class="px-space-sm py-space-2xs rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:ring-2 focus:ring-primary focus:outline-none" placeholder="e.g. Advanced Cloud Security Architecture" type="text"/>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Code Identifier</label>
+<input class="px-space-sm py-space-2xs rounded-lg bg-surface-container font-mono text-on-surface font-body-sm text-body-sm focus:outline-none" type="text" value="TRN-086"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Category</label>
+<select class="px-space-sm py-space-2xs rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:ring-2 focus:ring-primary focus:outline-none">
+<option>Technical</option>
+<option>Leadership</option>
+<option>Compliance</option>
+<option>Soft Skills</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Delivery Mode</label>
+<select class="px-space-sm py-space-2xs rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:ring-2 focus:ring-primary focus:outline-none">
+<option>Hybrid</option>
+<option>Online Classroom</option>
+<option>In-Person Workshop</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Target Max Quota</label>
+<input class="px-space-sm py-space-2xs rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:ring-2 focus:ring-primary focus:outline-none" type="number" value="30"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Curriculum Description &amp; Objectives</label>
+<textarea class="p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:ring-2 focus:ring-primary focus:outline-none" placeholder="Provide syllabus core pillars and expected competency outcomes..." rows="3"></textarea>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Assign Principal Trainer</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<label class="flex items-center gap-space-xs p-space-xs rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input checked="" class="text-primary focus:ring-primary" name="trainerSel" type="radio"/>
+<span class="font-label-md text-label-md text-on-surface">Dr. Irfan Pratama</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-xs rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="text-primary focus:ring-primary" name="trainerSel" type="radio"/>
+<span class="font-label-md text-label-md text-on-surface">Rina Setyowati</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-md bg-surface-container flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-2xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface cursor-pointer" id="btnCancelModal">Cancel</button>
+<button class="px-space-md py-space-2xs rounded-lg font-label-md text-label-md bg-primary hover:bg-primary-container text-on-primary font-bold shadow-sm cursor-pointer" id="btnSaveProgram">
+          Save &amp; Publish Program
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Logic Hook -->
+<script>
+    // Tab switching visual micro-interaction
+    const navTabs = document.querySelectorAll('.nav-tab');
+    navTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        navTabs.forEach(t => {
+          t.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+          t.classList.add('text-on-surface-variant');
+        });
+        tab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+        tab.classList.remove('text-on-surface-variant');
+      });
+    });
+
+    // Modal toggling
+    const modal = document.getElementById('createProgramModal');
+    const openBtn = document.getElementById('btnCreateProgram');
+    const closeBtn = document.getElementById('btnCloseModal');
+    const cancelBtn = document.getElementById('btnCancelModal');
+    const saveBtn = document.getElementById('btnSaveProgram');
+
+    const toggleModal = (show) => {
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    };
+
+    if (openBtn) openBtn.addEventListener('click', () => toggleModal(true));
+    if (closeBtn) closeBtn.addEventListener('click', () => toggleModal(false));
+    if (cancelBtn) cancelBtn.addEventListener('click', () => toggleModal(false));
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        toggleModal(false);
+        alert('Training program successfully drafted to SLEC Supabase repository!');
+      });
+    }
+
+    // Interactive Row Highlighting and Data Preview Update
+    function selectProgram(progId) {
+      const rows = document.querySelectorAll('#programsTableBody tr');
+      rows.forEach(r => {
+        r.classList.remove('bg-surface-container-low');
+      });
+      
+      const targetRow = document.querySelector(`[data-program-id="${progId}"]`);
+      if (targetRow) {
+        targetRow.classList.add('bg-surface-container-low');
+      }
+    }
+
+    // Search filter live feedback
+    const searchInput = document.getElementById('tableSearch');
+    const tableBody = document.getElementById('programsTableBody');
+    if (searchInput && tableBody) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        const rows = tableBody.querySelectorAll('tr');
+        rows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          row.style.display = text.includes(query) ? '' : 'none';
+        });
+      });
+    }
+
+    // Category filter feedback
+    const catSelect = document.getElementById('categoryFilter');
+    if (catSelect) {
+      catSelect.addEventListener('change', (e) => {
+        const val = e.target.value;
+        const rows = tableBody.querySelectorAll('tr');
+        rows.forEach(row => {
+          if (val === 'all') {
+            row.style.display = '';
+          } else {
+            const rowText = row.innerText;
+            row.style.display = rowText.includes(val) ? '' : 'none';
+          }
+        });
+      });
+    }
+
+    // Quick action trigger notifications
+    const launchBtn = document.getElementById('btnLaunchClassroom');
+    if (launchBtn) {
+      launchBtn.addEventListener('click', () => {
+        alert('Connecting to SLEC Realtime Virtual Classroom (Jitsi/Zoom Web SDK)...');
+      });
+    }
+
+    const exportCsvBtn = document.getElementById('btnExportCsv');
+    if (exportCsvBtn) {
+      exportCsvBtn.addEventListener('click', () => {
+        alert('Exporting attendance CSV for TRN-081 cohort...');
+      });
+    }
+  </script>
+</div></main></div></body></html>
